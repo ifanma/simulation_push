@@ -1,4 +1,4 @@
-function state = c2_task2(x0_, param)
+function state = c2_task2(param)
 
 
     fileControlID = fopen('c2_control.dat','w');
@@ -21,6 +21,7 @@ function state = c2_task2(x0_, param)
         N = param.N;
         
         Q = param.Q; R = param.R; W = param.W; V = param.V;
+        Qn = param.Q_N;
         xl = param.xl; xu = param.xu;
         ul = param.ul; uu = param.uu;
 
@@ -54,12 +55,12 @@ function state = c2_task2(x0_, param)
             constraints = [constraints, x{k+1}- x_star{k+1} == A{k}*(x{k}-x_star{k}) + B{k}*(u{k}-u_star{k})] ;
             constraints = [constraints, ul<= u{k}<= uu, xl<= x{k}<= xu];
         end
-        objective = objective + (x{k+1}- x_star{k+1})'*Q*(x{k+1}- x_star{k+1});
+        objective = objective + (x{k+1}- x_star{k+1})'*Qn*(x{k+1}- x_star{k+1});
         constraints = [constraints, xl<= x{k+1}<= xu];
         
         parameters_in = {x0, [A{:}], [B{:}], [u_star{:}], [x_star{:}]};
         solutions_out = {[u{:}], [x{:}], [z{:}]};
-        ops = sdpsettings('verbose', 1, 'solver','gurobi', 'savedebug', '0', 'gurobi.timelimit', param.opttimelim);
+        ops = sdpsettings('verbose', 1, 'solver','gurobi', 'savedebug', false, 'gurobi.timelimit', param.opttimelim);
         controller = optimizer(constraints, objective,ops,parameters_in,solutions_out);
         param.controller = controller;
         fprintf(logFileID, 'Controller build finished.\r\n');

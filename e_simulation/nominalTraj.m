@@ -6,7 +6,7 @@ function [x_star, u_star] = nominalTraj(t, param)
     % x_star(t) =  [v_star*t 0 0 v_star*t-L/2 0]';
     % u_star(t) = [v_star/(umg), 0, 0]';
 
-    t0 = 1;
+    t0 = 0.3;
     if t< t0
         t = 0;
     else

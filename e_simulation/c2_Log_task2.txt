@@ -1,0 +1,26 @@
+Program started
+Controller build finished.
+Waiting for starting communication thread.
+Waiting for starting communication thread.
+Waiting for starting communication thread.
+Waiting for starting communication thread.
+Waiting for starting communication thread.
+Waiting for starting communication thread.
+Waiting for starting communication thread.
+Waiting for starting communication thread.
+Waiting for starting communication thread.
+Waiting for starting communication thread.
+Waiting for starting communication thread.
+Waiting for starting communication thread.
+Waiting for starting communication thread.
+Waiting for starting communication thread.
+Waiting for starting communication thread.
+Control Thread Started!
+Timer in. t = 0.133600, x1 = 0.000467
+Timer in. t = 0.323257, x1 = 0.000472
+Timer in. t = 0.515567, x1 = 0.036796
+Timer in. t = 0.730364, x1 = 0.106259
+Timer in. t = 0.915557, x1 = 0.164914
+Timer in. t = 1.244072, x1 = 0.194811
+Control Thread Stopped!
+Timer stoped.

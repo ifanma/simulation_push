@@ -1,0 +1,1100 @@
+Program started
+Connected to remote API server
+Number of objects in the scene: 26
+currentTime = 0.000652, dt = 0.000562
+1.000000 Here here.
+Here here.
+currentTime = 0.063868, dt = 0.063216
+0.000000 Here here.
+currentTime = 0.077169, dt = 0.013301
+0.000000 Here here.
+currentTime = 0.086747, dt = 0.009578
+0.000000 Here here.
+currentTime = 0.096450, dt = 0.009704
+0.000000 Here here.
+currentTime = 0.114760, dt = 0.018309
+0.000000 Here here.
+currentTime = 0.116833, dt = 0.002073
+0.000000 Here here.
+currentTime = 0.118923, dt = 0.002090
+0.000000 Here here.
+currentTime = 0.120940, dt = 0.002017
+0.000000 Here here.
+currentTime = 0.122975, dt = 0.002035
+0.000000 Here here.
+currentTime = 0.125145, dt = 0.002170
+0.000000 Here here.
+currentTime = 0.131578, dt = 0.006432
+0.000000 Here here.
+currentTime = 0.133600, dt = 0.002022
+0.000000 Here here.
+currentTime = 0.135608, dt = 0.002008
+0.000000 Here here.
+currentTime = 0.137704, dt = 0.002096
+0.000000 Here here.
+currentTime = 0.139728, dt = 0.002024
+0.000000 Here here.
+currentTime = 0.141767, dt = 0.002039
+0.000000 Here here.
+currentTime = 0.143780, dt = 0.002012
+0.000000 Here here.
+currentTime = 0.145804, dt = 0.002024
+0.000000 Here here.
+currentTime = 0.147815, dt = 0.002011
+0.000000 Here here.
+currentTime = 0.149823, dt = 0.002008
+0.000000 Here here.
+currentTime = 0.151850, dt = 0.002028
+0.000000 Here here.
+currentTime = 0.153863, dt = 0.002012
+0.000000 Here here.
+currentTime = 0.155890, dt = 0.002028
+0.000000 Here here.
+currentTime = 0.157917, dt = 0.002026
+0.000000 Here here.
+currentTime = 0.159976, dt = 0.002059
+0.000000 Here here.
+currentTime = 0.161997, dt = 0.002021
+0.000000 Here here.
+currentTime = 0.164007, dt = 0.002010
+0.000000 Here here.
+currentTime = 0.166016, dt = 0.002008
+0.000000 Here here.
+currentTime = 0.168044, dt = 0.002028
+0.000000 Here here.
+currentTime = 0.170061, dt = 0.002017
+0.000000 Here here.
+currentTime = 0.172073, dt = 0.002012
+0.000000 Here here.
+currentTime = 0.174086, dt = 0.002013
+0.000000 Here here.
+currentTime = 0.176097, dt = 0.002011
+0.000000 Here here.
+currentTime = 0.178260, dt = 0.002163
+0.000000 Here here.
+currentTime = 0.180269, dt = 0.002009
+0.000000 Here here.
+currentTime = 0.182296, dt = 0.002026
+0.000000 Here here.
+currentTime = 0.184885, dt = 0.002589
+0.000000 Here here.
+currentTime = 0.186896, dt = 0.002012
+0.000000 Here here.
+currentTime = 0.188911, dt = 0.002015
+0.000000 Here here.
+currentTime = 0.190922, dt = 0.002011
+0.000000 Here here.
+currentTime = 0.192932, dt = 0.002010
+0.000000 Here here.
+currentTime = 0.194954, dt = 0.002022
+0.000000 Here here.
+currentTime = 0.196964, dt = 0.002010
+0.000000 Here here.
+currentTime = 0.199057, dt = 0.002092
+0.000000 Here here.
+currentTime = 0.201065, dt = 0.002009
+0.000000 Here here.
+currentTime = 0.203086, dt = 0.002021
+0.000000 Here here.
+currentTime = 0.205098, dt = 0.002012
+0.000000 Here here.
+currentTime = 0.207128, dt = 0.002030
+0.000000 Here here.
+currentTime = 0.209144, dt = 0.002015
+0.000000 Here here.
+currentTime = 0.211163, dt = 0.002020
+0.000000 Here here.
+currentTime = 0.213174, dt = 0.002011
+0.000000 Here here.
+currentTime = 0.215189, dt = 0.002015
+0.000000 Here here.
+currentTime = 0.217206, dt = 0.002017
+0.000000 Here here.
+currentTime = 0.219224, dt = 0.002018
+0.000000 Here here.
+currentTime = 0.221236, dt = 0.002011
+0.000000 Here here.
+currentTime = 0.223245, dt = 0.002009
+0.000000 Here here.
+currentTime = 0.225253, dt = 0.002008
+0.000000 Here here.
+currentTime = 0.227278, dt = 0.002025
+0.000000 Here here.
+currentTime = 0.229295, dt = 0.002017
+0.000000 Here here.
+currentTime = 0.231321, dt = 0.002026
+0.000000 Here here.
+currentTime = 0.233335, dt = 0.002014
+0.000000 Here here.
+currentTime = 0.235349, dt = 0.002014
+0.000000 Here here.
+currentTime = 0.237361, dt = 0.002012
+0.000000 Here here.
+currentTime = 0.239371, dt = 0.002010
+0.000000 Here here.
+currentTime = 0.241382, dt = 0.002011
+0.000000 Here here.
+currentTime = 0.243391, dt = 0.002009
+0.000000 Here here.
+currentTime = 0.245403, dt = 0.002011
+0.000000 Here here.
+currentTime = 0.247413, dt = 0.002011
+0.000000 Here here.
+currentTime = 0.249433, dt = 0.002020
+0.000000 Here here.
+currentTime = 0.251443, dt = 0.002010
+0.000000 Here here.
+currentTime = 0.253451, dt = 0.002008
+0.000000 Here here.
+currentTime = 0.255471, dt = 0.002021
+0.000000 Here here.
+currentTime = 0.257486, dt = 0.002014
+0.000000 Here here.
+currentTime = 0.259496, dt = 0.002011
+0.000000 Here here.
+currentTime = 0.261764, dt = 0.002268
+0.000000 Here here.
+currentTime = 0.263783, dt = 0.002019
+0.000000 Here here.
+currentTime = 0.265796, dt = 0.002012
+0.000000 Here here.
+currentTime = 0.267816, dt = 0.002020
+0.000000 Here here.
+currentTime = 0.269837, dt = 0.002020
+0.000000 Here here.
+currentTime = 0.271871, dt = 0.002034
+0.000000 Here here.
+currentTime = 0.273935, dt = 0.002064
+0.000000 Here here.
+currentTime = 0.275948, dt = 0.002014
+0.000000 Here here.
+currentTime = 0.277960, dt = 0.002012
+0.000000 Here here.
+currentTime = 0.279985, dt = 0.002025
+0.000000 Here here.
+currentTime = 0.282154, dt = 0.002169
+0.000000 Here here.
+currentTime = 0.284199, dt = 0.002044
+0.000000 Here here.
+currentTime = 0.286273, dt = 0.002074
+0.000000 Here here.
+currentTime = 0.288392, dt = 0.002119
+0.000000 Here here.
+currentTime = 0.290524, dt = 0.002132
+0.000000 Here here.
+currentTime = 0.292639, dt = 0.002115
+0.000000 Here here.
+currentTime = 0.294661, dt = 0.002022
+0.000000 Here here.
+currentTime = 0.296878, dt = 0.002217
+0.000000 Here here.
+currentTime = 0.298980, dt = 0.002101
+0.000000 Here here.
+currentTime = 0.301003, dt = 0.002023
+0.000000 Here here.
+currentTime = 0.303028, dt = 0.002025
+0.000000 Here here.
+currentTime = 0.305036, dt = 0.002009
+0.000000 Here here.
+currentTime = 0.307049, dt = 0.002013
+0.000000 Here here.
+currentTime = 0.309060, dt = 0.002011
+1.000000 Here here.
+Here here.
+currentTime = 0.317214, dt = 0.008154
+0.000000 Here here.
+currentTime = 0.319233, dt = 0.002019
+0.000000 Here here.
+currentTime = 0.321243, dt = 0.002010
+0.000000 Here here.
+currentTime = 0.323257, dt = 0.002014
+0.000000 Here here.
+currentTime = 0.325300, dt = 0.002044
+0.000000 Here here.
+currentTime = 0.327311, dt = 0.002011
+0.000000 Here here.
+currentTime = 0.329324, dt = 0.002013
+0.000000 Here here.
+currentTime = 0.331334, dt = 0.002009
+0.000000 Here here.
+currentTime = 0.333388, dt = 0.002055
+0.000000 Here here.
+currentTime = 0.335396, dt = 0.002008
+0.000000 Here here.
+currentTime = 0.337417, dt = 0.002021
+0.000000 Here here.
+currentTime = 0.339431, dt = 0.002015
+0.000000 Here here.
+currentTime = 0.341443, dt = 0.002011
+0.000000 Here here.
+currentTime = 0.343452, dt = 0.002009
+0.000000 Here here.
+currentTime = 0.345467, dt = 0.002015
+0.000000 Here here.
+currentTime = 0.347484, dt = 0.002017
+0.000000 Here here.
+currentTime = 0.349500, dt = 0.002016
+0.000000 Here here.
+currentTime = 0.351513, dt = 0.002013
+0.000000 Here here.
+currentTime = 0.353535, dt = 0.002022
+0.000000 Here here.
+currentTime = 0.355545, dt = 0.002010
+0.000000 Here here.
+currentTime = 0.357567, dt = 0.002022
+0.000000 Here here.
+currentTime = 0.359586, dt = 0.002018
+0.000000 Here here.
+currentTime = 0.361612, dt = 0.002026
+0.000000 Here here.
+currentTime = 0.363623, dt = 0.002012
+0.000000 Here here.
+currentTime = 0.365643, dt = 0.002020
+0.000000 Here here.
+currentTime = 0.367657, dt = 0.002014
+0.000000 Here here.
+currentTime = 0.369668, dt = 0.002011
+0.000000 Here here.
+currentTime = 0.371687, dt = 0.002019
+0.000000 Here here.
+currentTime = 0.373698, dt = 0.002011
+0.000000 Here here.
+currentTime = 0.375709, dt = 0.002011
+0.000000 Here here.
+currentTime = 0.377723, dt = 0.002014
+0.000000 Here here.
+currentTime = 0.379734, dt = 0.002011
+0.000000 Here here.
+currentTime = 0.381761, dt = 0.002027
+0.000000 Here here.
+currentTime = 0.383773, dt = 0.002012
+0.000000 Here here.
+currentTime = 0.385796, dt = 0.002023
+0.000000 Here here.
+currentTime = 0.387808, dt = 0.002012
+0.000000 Here here.
+currentTime = 0.389818, dt = 0.002011
+0.000000 Here here.
+currentTime = 0.391964, dt = 0.002146
+0.000000 Here here.
+currentTime = 0.393981, dt = 0.002017
+0.000000 Here here.
+currentTime = 0.395995, dt = 0.002014
+0.000000 Here here.
+currentTime = 0.398009, dt = 0.002014
+0.000000 Here here.
+currentTime = 0.400021, dt = 0.002013
+0.000000 Here here.
+currentTime = 0.402032, dt = 0.002011
+0.000000 Here here.
+currentTime = 0.404040, dt = 0.002008
+0.000000 Here here.
+currentTime = 0.406466, dt = 0.002426
+0.000000 Here here.
+currentTime = 0.408479, dt = 0.002012
+0.000000 Here here.
+currentTime = 0.410511, dt = 0.002032
+0.000000 Here here.
+currentTime = 0.412536, dt = 0.002026
+0.000000 Here here.
+currentTime = 0.414551, dt = 0.002014
+0.000000 Here here.
+currentTime = 0.416566, dt = 0.002016
+0.000000 Here here.
+currentTime = 0.418598, dt = 0.002032
+0.000000 Here here.
+currentTime = 0.420619, dt = 0.002021
+0.000000 Here here.
+currentTime = 0.422628, dt = 0.002008
+0.000000 Here here.
+currentTime = 0.424644, dt = 0.002016
+0.000000 Here here.
+currentTime = 0.426652, dt = 0.002008
+0.000000 Here here.
+currentTime = 0.428677, dt = 0.002025
+0.000000 Here here.
+currentTime = 0.430689, dt = 0.002012
+0.000000 Here here.
+currentTime = 0.432698, dt = 0.002009
+0.000000 Here here.
+currentTime = 0.434715, dt = 0.002017
+1.000000 Here here.
+Here here.
+currentTime = 0.438764, dt = 0.004049
+0.000000 Here here.
+currentTime = 0.440777, dt = 0.002014
+0.000000 Here here.
+currentTime = 0.442787, dt = 0.002010
+0.000000 Here here.
+currentTime = 0.444800, dt = 0.002013
+0.000000 Here here.
+currentTime = 0.446992, dt = 0.002192
+0.000000 Here here.
+currentTime = 0.449001, dt = 0.002009
+0.000000 Here here.
+currentTime = 0.451014, dt = 0.002013
+0.000000 Here here.
+currentTime = 0.453023, dt = 0.002010
+0.000000 Here here.
+currentTime = 0.455033, dt = 0.002010
+0.000000 Here here.
+currentTime = 0.457045, dt = 0.002012
+0.000000 Here here.
+currentTime = 0.459055, dt = 0.002010
+0.000000 Here here.
+currentTime = 0.461064, dt = 0.002009
+0.000000 Here here.
+currentTime = 0.463094, dt = 0.002030
+0.000000 Here here.
+currentTime = 0.465140, dt = 0.002046
+0.000000 Here here.
+currentTime = 0.467149, dt = 0.002009
+0.000000 Here here.
+currentTime = 0.469163, dt = 0.002014
+0.000000 Here here.
+currentTime = 0.471171, dt = 0.002008
+0.000000 Here here.
+currentTime = 0.473184, dt = 0.002012
+0.000000 Here here.
+currentTime = 0.475192, dt = 0.002008
+0.000000 Here here.
+currentTime = 0.477198, dt = 0.002007
+0.000000 Here here.
+currentTime = 0.479214, dt = 0.002015
+0.000000 Here here.
+currentTime = 0.481236, dt = 0.002022
+0.000000 Here here.
+currentTime = 0.483250, dt = 0.002015
+0.000000 Here here.
+currentTime = 0.485260, dt = 0.002010
+0.000000 Here here.
+currentTime = 0.487270, dt = 0.002010
+0.000000 Here here.
+currentTime = 0.489282, dt = 0.002012
+0.000000 Here here.
+currentTime = 0.491293, dt = 0.002011
+0.000000 Here here.
+currentTime = 0.493306, dt = 0.002014
+0.000000 Here here.
+currentTime = 0.495316, dt = 0.002009
+0.000000 Here here.
+currentTime = 0.497325, dt = 0.002009
+0.000000 Here here.
+currentTime = 0.499334, dt = 0.002009
+0.000000 Here here.
+currentTime = 0.501346, dt = 0.002012
+0.000000 Here here.
+currentTime = 0.503355, dt = 0.002009
+0.000000 Here here.
+currentTime = 0.505365, dt = 0.002010
+0.000000 Here here.
+currentTime = 0.507376, dt = 0.002011
+0.000000 Here here.
+currentTime = 0.509385, dt = 0.002010
+0.000000 Here here.
+currentTime = 0.511516, dt = 0.002130
+0.000000 Here here.
+currentTime = 0.513547, dt = 0.002031
+0.000000 Here here.
+currentTime = 0.515567, dt = 0.002020
+0.000000 Here here.
+currentTime = 0.517578, dt = 0.002012
+0.000000 Here here.
+currentTime = 0.519586, dt = 0.002008
+0.000000 Here here.
+currentTime = 0.521610, dt = 0.002024
+0.000000 Here here.
+currentTime = 0.523627, dt = 0.002018
+0.000000 Here here.
+currentTime = 0.525705, dt = 0.002078
+0.000000 Here here.
+currentTime = 0.527722, dt = 0.002016
+0.000000 Here here.
+currentTime = 0.529738, dt = 0.002017
+0.000000 Here here.
+currentTime = 0.531748, dt = 0.002009
+0.000000 Here here.
+currentTime = 0.533785, dt = 0.002037
+0.000000 Here here.
+currentTime = 0.535807, dt = 0.002021
+0.000000 Here here.
+currentTime = 0.537816, dt = 0.002009
+0.000000 Here here.
+currentTime = 0.539832, dt = 0.002017
+0.000000 Here here.
+currentTime = 0.541856, dt = 0.002024
+0.000000 Here here.
+currentTime = 0.543878, dt = 0.002022
+0.000000 Here here.
+currentTime = 0.545889, dt = 0.002011
+0.000000 Here here.
+currentTime = 0.547914, dt = 0.002025
+0.000000 Here here.
+currentTime = 0.549926, dt = 0.002013
+0.000000 Here here.
+currentTime = 0.551939, dt = 0.002013
+0.000000 Here here.
+currentTime = 0.553951, dt = 0.002011
+0.000000 Here here.
+currentTime = 0.555966, dt = 0.002015
+0.000000 Here here.
+currentTime = 0.557984, dt = 0.002018
+0.000000 Here here.
+currentTime = 0.560004, dt = 0.002020
+0.000000 Here here.
+currentTime = 0.562017, dt = 0.002013
+0.000000 Here here.
+currentTime = 0.564034, dt = 0.002017
+0.000000 Here here.
+currentTime = 0.566042, dt = 0.002008
+0.000000 Here here.
+currentTime = 0.568053, dt = 0.002010
+0.000000 Here here.
+currentTime = 0.570064, dt = 0.002011
+0.000000 Here here.
+currentTime = 0.572089, dt = 0.002025
+0.000000 Here here.
+currentTime = 0.574098, dt = 0.002008
+0.000000 Here here.
+currentTime = 0.576110, dt = 0.002012
+0.000000 Here here.
+currentTime = 0.578127, dt = 0.002017
+0.000000 Here here.
+currentTime = 0.580136, dt = 0.002009
+0.000000 Here here.
+currentTime = 0.582171, dt = 0.002035
+0.000000 Here here.
+currentTime = 0.584185, dt = 0.002013
+0.000000 Here here.
+currentTime = 0.586631, dt = 0.002447
+0.000000 Here here.
+currentTime = 0.588647, dt = 0.002015
+0.000000 Here here.
+currentTime = 0.591638, dt = 0.002992
+0.000000 Here here.
+currentTime = 0.593656, dt = 0.002017
+0.000000 Here here.
+currentTime = 0.595667, dt = 0.002011
+1.000000 Here here.
+Here here.
+currentTime = 0.597714, dt = 0.002047
+0.000000 Here here.
+currentTime = 0.599737, dt = 0.002023
+0.000000 Here here.
+currentTime = 0.601750, dt = 0.002014
+0.000000 Here here.
+currentTime = 0.604788, dt = 0.003038
+0.000000 Here here.
+currentTime = 0.606800, dt = 0.002012
+0.000000 Here here.
+currentTime = 0.608811, dt = 0.002011
+0.000000 Here here.
+currentTime = 0.610824, dt = 0.002013
+0.000000 Here here.
+currentTime = 0.612842, dt = 0.002018
+0.000000 Here here.
+currentTime = 0.614855, dt = 0.002013
+0.000000 Here here.
+currentTime = 0.616866, dt = 0.002011
+0.000000 Here here.
+currentTime = 0.618884, dt = 0.002017
+0.000000 Here here.
+currentTime = 0.623431, dt = 0.004548
+0.000000 Here here.
+currentTime = 0.626599, dt = 0.003168
+0.000000 Here here.
+currentTime = 0.629012, dt = 0.002413
+0.000000 Here here.
+currentTime = 0.631033, dt = 0.002021
+0.000000 Here here.
+currentTime = 0.633114, dt = 0.002081
+0.000000 Here here.
+currentTime = 0.635123, dt = 0.002009
+0.000000 Here here.
+currentTime = 0.642256, dt = 0.007133
+0.000000 Here here.
+currentTime = 0.648481, dt = 0.006225
+0.000000 Here here.
+currentTime = 0.650493, dt = 0.002013
+0.000000 Here here.
+currentTime = 0.652581, dt = 0.002087
+0.000000 Here here.
+currentTime = 0.654828, dt = 0.002247
+0.000000 Here here.
+currentTime = 0.656855, dt = 0.002028
+0.000000 Here here.
+currentTime = 0.658871, dt = 0.002016
+0.000000 Here here.
+currentTime = 0.660885, dt = 0.002014
+0.000000 Here here.
+currentTime = 0.662893, dt = 0.002008
+0.000000 Here here.
+currentTime = 0.664902, dt = 0.002009
+0.000000 Here here.
+currentTime = 0.666912, dt = 0.002009
+0.000000 Here here.
+currentTime = 0.668920, dt = 0.002008
+0.000000 Here here.
+currentTime = 0.670941, dt = 0.002021
+0.000000 Here here.
+currentTime = 0.672952, dt = 0.002011
+0.000000 Here here.
+currentTime = 0.674965, dt = 0.002013
+0.000000 Here here.
+currentTime = 0.676975, dt = 0.002009
+0.000000 Here here.
+currentTime = 0.678985, dt = 0.002010
+0.000000 Here here.
+currentTime = 0.680995, dt = 0.002010
+0.000000 Here here.
+currentTime = 0.683020, dt = 0.002025
+0.000000 Here here.
+currentTime = 0.685029, dt = 0.002009
+0.000000 Here here.
+currentTime = 0.687047, dt = 0.002018
+0.000000 Here here.
+currentTime = 0.689083, dt = 0.002035
+0.000000 Here here.
+currentTime = 0.691097, dt = 0.002014
+0.000000 Here here.
+currentTime = 0.693120, dt = 0.002023
+0.000000 Here here.
+currentTime = 0.695144, dt = 0.002024
+0.000000 Here here.
+currentTime = 0.697162, dt = 0.002018
+0.000000 Here here.
+currentTime = 0.699434, dt = 0.002272
+0.000000 Here here.
+currentTime = 0.701445, dt = 0.002011
+0.000000 Here here.
+currentTime = 0.703789, dt = 0.002344
+0.000000 Here here.
+currentTime = 0.705806, dt = 0.002017
+0.000000 Here here.
+currentTime = 0.707820, dt = 0.002014
+0.000000 Here here.
+currentTime = 0.709832, dt = 0.002012
+0.000000 Here here.
+currentTime = 0.711853, dt = 0.002021
+0.000000 Here here.
+currentTime = 0.713868, dt = 0.002016
+0.000000 Here here.
+currentTime = 0.715887, dt = 0.002019
+0.000000 Here here.
+currentTime = 0.717903, dt = 0.002015
+0.000000 Here here.
+currentTime = 0.719918, dt = 0.002015
+0.000000 Here here.
+currentTime = 0.722230, dt = 0.002312
+0.000000 Here here.
+currentTime = 0.724238, dt = 0.002008
+0.000000 Here here.
+currentTime = 0.726260, dt = 0.002022
+0.000000 Here here.
+currentTime = 0.728280, dt = 0.002020
+0.000000 Here here.
+currentTime = 0.730364, dt = 0.002083
+0.000000 Here here.
+currentTime = 0.732468, dt = 0.002104
+0.000000 Here here.
+currentTime = 0.734476, dt = 0.002008
+0.000000 Here here.
+currentTime = 0.736507, dt = 0.002030
+0.000000 Here here.
+currentTime = 0.738516, dt = 0.002009
+0.000000 Here here.
+currentTime = 0.740533, dt = 0.002018
+0.000000 Here here.
+currentTime = 0.742541, dt = 0.002008
+0.000000 Here here.
+currentTime = 0.744559, dt = 0.002018
+0.000000 Here here.
+currentTime = 0.746595, dt = 0.002036
+0.000000 Here here.
+currentTime = 0.748633, dt = 0.002038
+0.000000 Here here.
+currentTime = 0.750648, dt = 0.002015
+0.000000 Here here.
+currentTime = 0.752657, dt = 0.002008
+0.000000 Here here.
+currentTime = 0.754674, dt = 0.002018
+0.000000 Here here.
+currentTime = 0.756760, dt = 0.002085
+0.000000 Here here.
+currentTime = 0.758787, dt = 0.002027
+0.000000 Here here.
+currentTime = 0.760800, dt = 0.002013
+0.000000 Here here.
+currentTime = 0.762824, dt = 0.002024
+0.000000 Here here.
+currentTime = 0.764835, dt = 0.002011
+0.000000 Here here.
+currentTime = 0.767266, dt = 0.002430
+0.000000 Here here.
+currentTime = 0.769352, dt = 0.002087
+0.000000 Here here.
+currentTime = 0.771364, dt = 0.002012
+0.000000 Here here.
+currentTime = 0.773385, dt = 0.002020
+0.000000 Here here.
+currentTime = 0.775399, dt = 0.002015
+0.000000 Here here.
+currentTime = 0.777429, dt = 0.002029
+0.000000 Here here.
+currentTime = 0.779439, dt = 0.002010
+0.000000 Here here.
+currentTime = 0.781475, dt = 0.002036
+0.000000 Here here.
+currentTime = 0.783492, dt = 0.002016
+0.000000 Here here.
+currentTime = 0.785506, dt = 0.002014
+0.000000 Here here.
+currentTime = 0.787521, dt = 0.002015
+0.000000 Here here.
+currentTime = 0.789530, dt = 0.002008
+0.000000 Here here.
+currentTime = 0.791543, dt = 0.002014
+0.000000 Here here.
+currentTime = 0.793554, dt = 0.002011
+0.000000 Here here.
+currentTime = 0.795602, dt = 0.002048
+0.000000 Here here.
+currentTime = 0.797615, dt = 0.002012
+0.000000 Here here.
+currentTime = 0.799629, dt = 0.002014
+0.000000 Here here.
+currentTime = 0.801639, dt = 0.002010
+0.000000 Here here.
+currentTime = 0.803649, dt = 0.002010
+0.000000 Here here.
+currentTime = 0.805659, dt = 0.002010
+0.000000 Here here.
+currentTime = 0.807678, dt = 0.002020
+0.000000 Here here.
+currentTime = 0.809694, dt = 0.002016
+0.000000 Here here.
+currentTime = 0.811710, dt = 0.002015
+0.000000 Here here.
+currentTime = 0.813761, dt = 0.002052
+0.000000 Here here.
+currentTime = 0.815813, dt = 0.002051
+0.000000 Here here.
+currentTime = 0.817838, dt = 0.002026
+0.000000 Here here.
+currentTime = 0.819851, dt = 0.002012
+0.000000 Here here.
+currentTime = 0.821863, dt = 0.002012
+0.000000 Here here.
+currentTime = 0.823874, dt = 0.002011
+0.000000 Here here.
+currentTime = 0.825885, dt = 0.002011
+0.000000 Here here.
+currentTime = 0.827945, dt = 0.002060
+0.000000 Here here.
+currentTime = 0.829972, dt = 0.002027
+0.000000 Here here.
+currentTime = 0.831999, dt = 0.002027
+1.000000 Here here.
+Here here.
+currentTime = 0.840821, dt = 0.008822
+0.000000 Here here.
+currentTime = 0.842836, dt = 0.002014
+0.000000 Here here.
+currentTime = 0.844864, dt = 0.002028
+0.000000 Here here.
+currentTime = 0.846875, dt = 0.002011
+0.000000 Here here.
+currentTime = 0.848885, dt = 0.002009
+0.000000 Here here.
+currentTime = 0.850906, dt = 0.002021
+0.000000 Here here.
+currentTime = 0.852918, dt = 0.002012
+0.000000 Here here.
+currentTime = 0.854927, dt = 0.002009
+0.000000 Here here.
+currentTime = 0.856935, dt = 0.002008
+0.000000 Here here.
+currentTime = 0.858949, dt = 0.002014
+0.000000 Here here.
+currentTime = 0.860962, dt = 0.002014
+0.000000 Here here.
+currentTime = 0.862973, dt = 0.002010
+0.000000 Here here.
+currentTime = 0.864988, dt = 0.002015
+0.000000 Here here.
+currentTime = 0.866999, dt = 0.002011
+0.000000 Here here.
+currentTime = 0.869011, dt = 0.002011
+0.000000 Here here.
+currentTime = 0.871090, dt = 0.002079
+0.000000 Here here.
+currentTime = 0.873099, dt = 0.002009
+0.000000 Here here.
+currentTime = 0.875109, dt = 0.002011
+0.000000 Here here.
+currentTime = 0.877121, dt = 0.002012
+0.000000 Here here.
+currentTime = 0.879141, dt = 0.002019
+0.000000 Here here.
+currentTime = 0.881150, dt = 0.002009
+0.000000 Here here.
+currentTime = 0.883162, dt = 0.002012
+0.000000 Here here.
+currentTime = 0.885173, dt = 0.002011
+0.000000 Here here.
+currentTime = 0.887188, dt = 0.002015
+0.000000 Here here.
+currentTime = 0.889200, dt = 0.002012
+0.000000 Here here.
+currentTime = 0.891373, dt = 0.002173
+0.000000 Here here.
+currentTime = 0.893386, dt = 0.002013
+0.000000 Here here.
+currentTime = 0.895403, dt = 0.002018
+0.000000 Here here.
+currentTime = 0.897411, dt = 0.002008
+0.000000 Here here.
+currentTime = 0.899428, dt = 0.002017
+0.000000 Here here.
+currentTime = 0.901438, dt = 0.002010
+0.000000 Here here.
+currentTime = 0.903461, dt = 0.002023
+0.000000 Here here.
+currentTime = 0.905483, dt = 0.002022
+0.000000 Here here.
+currentTime = 0.907510, dt = 0.002027
+0.000000 Here here.
+currentTime = 0.909520, dt = 0.002010
+0.000000 Here here.
+currentTime = 0.911528, dt = 0.002008
+0.000000 Here here.
+currentTime = 0.913546, dt = 0.002018
+0.000000 Here here.
+currentTime = 0.915557, dt = 0.002011
+0.000000 Here here.
+currentTime = 0.917568, dt = 0.002011
+0.000000 Here here.
+currentTime = 0.919583, dt = 0.002015
+0.000000 Here here.
+currentTime = 0.921592, dt = 0.002009
+0.000000 Here here.
+currentTime = 0.923604, dt = 0.002012
+0.000000 Here here.
+currentTime = 0.925614, dt = 0.002010
+0.000000 Here here.
+currentTime = 0.927626, dt = 0.002012
+0.000000 Here here.
+currentTime = 0.929636, dt = 0.002009
+0.000000 Here here.
+currentTime = 0.931645, dt = 0.002009
+0.000000 Here here.
+currentTime = 0.933655, dt = 0.002010
+0.000000 Here here.
+currentTime = 0.935664, dt = 0.002010
+0.000000 Here here.
+currentTime = 0.937680, dt = 0.002016
+0.000000 Here here.
+currentTime = 0.939688, dt = 0.002007
+0.000000 Here here.
+currentTime = 0.941703, dt = 0.002016
+0.000000 Here here.
+currentTime = 0.943712, dt = 0.002008
+0.000000 Here here.
+currentTime = 0.945740, dt = 0.002028
+0.000000 Here here.
+currentTime = 0.947758, dt = 0.002018
+0.000000 Here here.
+currentTime = 0.949896, dt = 0.002138
+0.000000 Here here.
+currentTime = 0.951916, dt = 0.002019
+0.000000 Here here.
+currentTime = 0.953924, dt = 0.002009
+0.000000 Here here.
+currentTime = 0.955933, dt = 0.002009
+0.000000 Here here.
+currentTime = 0.957983, dt = 0.002050
+0.000000 Here here.
+currentTime = 0.959991, dt = 0.002008
+0.000000 Here here.
+currentTime = 0.962047, dt = 0.002056
+0.000000 Here here.
+currentTime = 0.964056, dt = 0.002009
+0.000000 Here here.
+currentTime = 0.966085, dt = 0.002029
+0.000000 Here here.
+currentTime = 0.968097, dt = 0.002011
+0.000000 Here here.
+currentTime = 0.970109, dt = 0.002012
+0.000000 Here here.
+currentTime = 0.972125, dt = 0.002017
+0.000000 Here here.
+currentTime = 0.974136, dt = 0.002010
+0.000000 Here here.
+currentTime = 0.976151, dt = 0.002016
+0.000000 Here here.
+currentTime = 0.978183, dt = 0.002031
+0.000000 Here here.
+currentTime = 0.980256, dt = 0.002073
+0.000000 Here here.
+currentTime = 0.982263, dt = 0.002007
+0.000000 Here here.
+currentTime = 0.984276, dt = 0.002013
+0.000000 Here here.
+currentTime = 0.986289, dt = 0.002013
+0.000000 Here here.
+currentTime = 0.988310, dt = 0.002020
+0.000000 Here here.
+currentTime = 0.990318, dt = 0.002008
+0.000000 Here here.
+currentTime = 0.992329, dt = 0.002011
+0.000000 Here here.
+currentTime = 0.994345, dt = 0.002016
+0.000000 Here here.
+currentTime = 0.996464, dt = 0.002120
+0.000000 Here here.
+currentTime = 0.998478, dt = 0.002013
+0.000000 Here here.
+currentTime = 1.000501, dt = 0.002023
+0.000000 Here here.
+currentTime = 1.002510, dt = 0.002010
+0.000000 Here here.
+currentTime = 1.004520, dt = 0.002010
+0.000000 Here here.
+currentTime = 1.006529, dt = 0.002009
+0.000000 Here here.
+currentTime = 1.008550, dt = 0.002021
+0.000000 Here here.
+currentTime = 1.010581, dt = 0.002030
+0.000000 Here here.
+currentTime = 1.012593, dt = 0.002012
+0.000000 Here here.
+currentTime = 1.014708, dt = 0.002115
+0.000000 Here here.
+currentTime = 1.016732, dt = 0.002023
+0.000000 Here here.
+currentTime = 1.018741, dt = 0.002009
+0.000000 Here here.
+currentTime = 1.020748, dt = 0.002007
+0.000000 Here here.
+currentTime = 1.022757, dt = 0.002009
+0.000000 Here here.
+currentTime = 1.024776, dt = 0.002019
+0.000000 Here here.
+currentTime = 1.026802, dt = 0.002026
+0.000000 Here here.
+currentTime = 1.028821, dt = 0.002019
+0.000000 Here here.
+currentTime = 1.030847, dt = 0.002026
+0.000000 Here here.
+currentTime = 1.032860, dt = 0.002013
+0.000000 Here here.
+currentTime = 1.034873, dt = 0.002013
+0.000000 Here here.
+currentTime = 1.036885, dt = 0.002012
+0.000000 Here here.
+currentTime = 1.038907, dt = 0.002022
+0.000000 Here here.
+currentTime = 1.040916, dt = 0.002009
+0.000000 Here here.
+currentTime = 1.042925, dt = 0.002009
+0.000000 Here here.
+currentTime = 1.044943, dt = 0.002018
+0.000000 Here here.
+currentTime = 1.046951, dt = 0.002009
+0.000000 Here here.
+currentTime = 1.048961, dt = 0.002009
+0.000000 Here here.
+currentTime = 1.050970, dt = 0.002009
+0.000000 Here here.
+currentTime = 1.052979, dt = 0.002009
+0.000000 Here here.
+currentTime = 1.055012, dt = 0.002034
+0.000000 Here here.
+currentTime = 1.057024, dt = 0.002012
+0.000000 Here here.
+currentTime = 1.059141, dt = 0.002117
+0.000000 Here here.
+currentTime = 1.061164, dt = 0.002023
+0.000000 Here here.
+currentTime = 1.063189, dt = 0.002024
+0.000000 Here here.
+currentTime = 1.065201, dt = 0.002012
+0.000000 Here here.
+currentTime = 1.067223, dt = 0.002022
+0.000000 Here here.
+currentTime = 1.069240, dt = 0.002017
+0.000000 Here here.
+currentTime = 1.071251, dt = 0.002011
+0.000000 Here here.
+currentTime = 1.073267, dt = 0.002016
+0.000000 Here here.
+currentTime = 1.075278, dt = 0.002011
+0.000000 Here here.
+currentTime = 1.077288, dt = 0.002010
+0.000000 Here here.
+currentTime = 1.079310, dt = 0.002022
+0.000000 Here here.
+currentTime = 1.081321, dt = 0.002011
+0.000000 Here here.
+currentTime = 1.083331, dt = 0.002010
+0.000000 Here here.
+currentTime = 1.085363, dt = 0.002032
+0.000000 Here here.
+currentTime = 1.087377, dt = 0.002014
+0.000000 Here here.
+currentTime = 1.089388, dt = 0.002011
+0.000000 Here here.
+currentTime = 1.091401, dt = 0.002012
+0.000000 Here here.
+currentTime = 1.093435, dt = 0.002034
+0.000000 Here here.
+currentTime = 1.095451, dt = 0.002016
+0.000000 Here here.
+currentTime = 1.097544, dt = 0.002093
+0.000000 Here here.
+currentTime = 1.099676, dt = 0.002133
+0.000000 Here here.
+currentTime = 1.101698, dt = 0.002021
+0.000000 Here here.
+currentTime = 1.103719, dt = 0.002021
+0.000000 Here here.
+currentTime = 1.105780, dt = 0.002061
+0.000000 Here here.
+currentTime = 1.107806, dt = 0.002026
+0.000000 Here here.
+currentTime = 1.109829, dt = 0.002022
+0.000000 Here here.
+currentTime = 1.111841, dt = 0.002012
+0.000000 Here here.
+currentTime = 1.113859, dt = 0.002019
+0.000000 Here here.
+currentTime = 1.115875, dt = 0.002016
+0.000000 Here here.
+currentTime = 1.118023, dt = 0.002148
+0.000000 Here here.
+currentTime = 1.120118, dt = 0.002095
+0.000000 Here here.
+currentTime = 1.122201, dt = 0.002083
+0.000000 Here here.
+currentTime = 1.124211, dt = 0.002009
+0.000000 Here here.
+currentTime = 1.126225, dt = 0.002014
+0.000000 Here here.
+currentTime = 1.128304, dt = 0.002079
+0.000000 Here here.
+currentTime = 1.130315, dt = 0.002010
+0.000000 Here here.
+currentTime = 1.132323, dt = 0.002008
+0.000000 Here here.
+currentTime = 1.134332, dt = 0.002009
+0.000000 Here here.
+currentTime = 1.136341, dt = 0.002009
+0.000000 Here here.
+currentTime = 1.138374, dt = 0.002033
+0.000000 Here here.
+currentTime = 1.140407, dt = 0.002033
+0.000000 Here here.
+currentTime = 1.142603, dt = 0.002196
+0.000000 Here here.
+currentTime = 1.144654, dt = 0.002052
+0.000000 Here here.
+currentTime = 1.146672, dt = 0.002017
+0.000000 Here here.
+currentTime = 1.148687, dt = 0.002015
+0.000000 Here here.
+currentTime = 1.150695, dt = 0.002008
+0.000000 Here here.
+currentTime = 1.153035, dt = 0.002340
+0.000000 Here here.
+currentTime = 1.155052, dt = 0.002017
+0.000000 Here here.
+currentTime = 1.157105, dt = 0.002053
+0.000000 Here here.
+currentTime = 1.159120, dt = 0.002015
+0.000000 Here here.
+currentTime = 1.161152, dt = 0.002032
+0.000000 Here here.
+currentTime = 1.163172, dt = 0.002020
+0.000000 Here here.
+currentTime = 1.165182, dt = 0.002010
+0.000000 Here here.
+currentTime = 1.167219, dt = 0.002037
+0.000000 Here here.
+currentTime = 1.169233, dt = 0.002014
+0.000000 Here here.
+currentTime = 1.171248, dt = 0.002015
+0.000000 Here here.
+currentTime = 1.173259, dt = 0.002011
+0.000000 Here here.
+currentTime = 1.175270, dt = 0.002011
+0.000000 Here here.
+currentTime = 1.177280, dt = 0.002010
+0.000000 Here here.
+currentTime = 1.179304, dt = 0.002024
+0.000000 Here here.
+currentTime = 1.181314, dt = 0.002011
+0.000000 Here here.
+currentTime = 1.183345, dt = 0.002030
+0.000000 Here here.
+currentTime = 1.185356, dt = 0.002011
+0.000000 Here here.
+currentTime = 1.187366, dt = 0.002010
+0.000000 Here here.
+currentTime = 1.189375, dt = 0.002009
+0.000000 Here here.
+currentTime = 1.191412, dt = 0.002038
+0.000000 Here here.
+currentTime = 1.193571, dt = 0.002158
+0.000000 Here here.
+currentTime = 1.195582, dt = 0.002011
+0.000000 Here here.
+currentTime = 1.197593, dt = 0.002010
+0.000000 Here here.
+currentTime = 1.199615, dt = 0.002023
+0.000000 Here here.
+currentTime = 1.201628, dt = 0.002013
+0.000000 Here here.
+currentTime = 1.203682, dt = 0.002054
+0.000000 Here here.
+currentTime = 1.205691, dt = 0.002009
+0.000000 Here here.
+currentTime = 1.207699, dt = 0.002008
+0.000000 Here here.
+currentTime = 1.209709, dt = 0.002010
+0.000000 Here here.
+currentTime = 1.211722, dt = 0.002013
+0.000000 Here here.
+currentTime = 1.213733, dt = 0.002011
+0.000000 Here here.
+currentTime = 1.215742, dt = 0.002009
+0.000000 Here here.
+currentTime = 1.217778, dt = 0.002036
+0.000000 Here here.
+currentTime = 1.219794, dt = 0.002016
+0.000000 Here here.
+currentTime = 1.221833, dt = 0.002038
+0.000000 Here here.
+currentTime = 1.223845, dt = 0.002013
+0.000000 Here here.
+currentTime = 1.225866, dt = 0.002021
+0.000000 Here here.
+currentTime = 1.227890, dt = 0.002024
+0.000000 Here here.
+currentTime = 1.229904, dt = 0.002013
+0.000000 Here here.
+currentTime = 1.231915, dt = 0.002012
+0.000000 Here here.
+currentTime = 1.233939, dt = 0.002024
+0.000000 Here here.
+currentTime = 1.235950, dt = 0.002011
+0.000000 Here here.
+currentTime = 1.237960, dt = 0.002010
+0.000000 Here here.
+currentTime = 1.239999, dt = 0.002039
+0.000000 Here here.
+currentTime = 1.242035, dt = 0.002036
+0.000000 Here here.
+currentTime = 1.244072, dt = 0.002037
+1.000000 Here here.
+Here here.
+Solver failed. please check.

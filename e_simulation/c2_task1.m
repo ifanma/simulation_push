@@ -141,7 +141,7 @@ end
             end
             
             % mpc control
-            pos_joint = pos_joint + diag([1, 0.6])*v{1} * param.loopdt;
+            pos_joint = pos_joint + diag([0.5, 0.2])*v{1} * param.loopdt;
             pos_joint(pos_joint > 2) = 2;
             pos_joint(pos_joint < -2) = -2;
     

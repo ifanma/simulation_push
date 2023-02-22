@@ -7,9 +7,9 @@ function state = c2_task1(x0_, param)
     M = size(param.uu, 1);
     N = param.N;
     mmap_control = memmapfile('c2_control.dat', 'Writable', true, ...
-                                    'Format', {'uint8',[1 1],'flag';...
-                             'uint8',[1 1],'diag'; 'double',[M,N],'u';...
-                             'double',[1,N],'z'});
+                    'Format', {'uint8',[1 1],'flag'; 'uint8',[1 1],'diag';...
+                               'double',1,'dt'; 'double',[M,N],'u'; ...
+                               'double',[1,N],'z'; 'double',[4,N+1],'x'});
     mmap_state = memmapfile('c2_state.dat','Format','double', 'Writable', true);
     mmap = memmapfile('c2_joy.dat','Format','double');
     logFileID = fopen('c2_Log_task1.txt', 'w+');
@@ -64,8 +64,9 @@ function state = c2_task1(x0_, param)
         [~] = sim.simxGetJointForce(clientID, Jy_h, sim.simx_opmode_continuous);
             
         % 开始循环 
-        x_plot = []; u_plot = []; usize_plot = []; t_plot = []; 
-        u_rec = []; z_plot = []; joint_plot = []; uft_plot = []; jft_plot = []; 
+        x_plot = []; u_plot = []; usize_plot = []; t_plot = []; xpre_plot = {};
+        u_rec = zeros(4, param.N); z_plot = []; joint_plot = []; uft_plot = [];
+        jft_plot = []; u_index = 0;
         pos_cmd = pc(1:2);
         pos_joint = pos_cmd;
         angle_round = 0; ang_last = 0;
@@ -75,7 +76,6 @@ function state = c2_task1(x0_, param)
         startTime=toc;
         currentTime=toc;
         lastPlotTime = currentTime;
-        lastCtrlTime = currentTime;
         lastTime = currentTime;
         while (currentTime-startTime < param.tf)
             currentTime = toc;
@@ -123,23 +123,24 @@ function state = c2_task1(x0_, param)
                     assert(0, 'solver failed.');
                     break;
                 end
-                u_rec = control_data.u;
+                fprintf(logFileID, 'Here here. %f, %f, %f\r\n', size(control_data.x, 2), size(u_rec, 2), size(control_data.u, 2));
+                u_rec(1, :) = control_data.x(1, 1:end-1);
+                u_rec(2:4, :) = control_data.u;
                 z_plot(:, end + 1) = control_data.z';
-                fprintf(logFileID, 'Here here. %f, %f, %f\r\n', u_rec(2, 1), u_rec(2, 2), u_rec(2, 3));
-            end 
-    
-            if isempty(u_rec)
-                u_rec(:, 1) = [0 0 0 ]';
+                xpre_plot{end + 1} = control_data.x;
             end
+    
 if param.DEBUG ==1
             u_rec(:, 1) = [0.1 / param.L(1,1), 0.02 / param.L(1,1), 0]';
 end
-            v = calc_v(x0_, u_rec(:, 1), param, 1);
-            u_plot_ = u_rec(:, 1);
-            if currentTime - lastCtrlTime > param.predt
-                u_rec(:, 1) = [];
-                lastCtrlTime = currentTime;
+
+            u_ind = find((currentTime - u_rec(1, :)>0) & (currentTime-u_rec(1, :)<=param.loopdt), 1);
+            if ~isempty(u_ind)
+                u_this = u_rec(2:4, u_ind);
+                u_index = u_ind;
             end
+            v = calc_v(x0_, u_this, param, 1);
+            u_plot_ = u_this;
             
             % mpc control
             pos_joint = pos_joint + diag([0.6, 0.5])*v{1} * param.loopdt;
@@ -161,7 +162,7 @@ end
                 ref = param.traj(currentTime, param);
                 x_plot(:, end +1) = [ref', x0_']';
                 u_plot(:, end + 1) = u_plot_;
-                usize_plot(:, end+1) = size(u_rec, 2);
+                usize_plot(:, end+1) = u_index;
                 t_plot(:, end+1) = currentTime;
                 joint_plot(:, end+1) = [pos_joint; realJx; realJy];
                 R = [cos(x0_(3)) -sin(x0_(3)) ; sin(x0_(3)) cos(x0_(3)) ]';

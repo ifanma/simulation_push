@@ -6,13 +6,15 @@ function state = c2_task2(param)
     N = param.N;
     fwrite(fileControlID, 1, 'uint8');
     fwrite(fileControlID, 0, 'uint8');
+    fwrite(fileControlID, 1, 'double');
     fwrite(fileControlID, zeros(M, N), 'double');
     fwrite(fileControlID, zeros(1, N), 'double');
+    fwrite(fileControlID, zeros(4, N+1), 'double');
     fclose(fileControlID);
     mmap_control = memmapfile('c2_control.dat', 'Writable', true, ...
-                                    'Format', {'uint8',[1 1],'flag';...
-                             'uint8',[1 1],'diag'; 'double',[M,N],'u';...
-                             'double',[1,N],'z'});
+                    'Format', {'uint8',[1 1],'flag'; 'uint8',[1 1],'diag';...
+                               'double',1,'dt'; 'double',[M,N],'u'; ...
+                               'double',[1,N],'z'; 'double',[4,N+1],'x'});
     mmap_state = memmapfile('c2_state.dat','Format','double');
     logFileID = fopen('c2_Log_task2.txt', 'w+');
     fprintf(logFileID, 'Program started\r\n');
@@ -73,8 +75,8 @@ function state = c2_task2(param)
         t.StartFcn = @(x,y)fprintf(logFileID, 'Control Thread Started!\r\n');
         t.StopFcn = @(x,y)fprintf(logFileID,'Control Thread Stopped!\r\n');
         
-        tic
-        while toc < 10
+        t_star = tic;
+        while toc(t_star) < 10
             fprintf(logFileID, 'Waiting for starting communication thread.\r\n');
             pause(0.05);
             if mmap_control.Data.flag == 0
@@ -108,24 +110,29 @@ end
 
 function c2_timer_cb(~, ~, logFileID, param, mmap_state, mmap_control)
     state = mmap_state.Data;
-    fprintf(logFileID,'Timer in. t = %f, x1 = %f\r\n', state(1), state(2));
     t = state(1);
     x = state(2:6);
 
+    t_star = tic;
     [~, param_] = controlEqn(t, x, param);
+    usedTime = toc(t_star);
 
     mmap_control.Data.u = param_.u_rec_oneshoot;
 %     mmap_control.Data.u = repmat([0.25 / param.L(1,1), 0, 0]', 1, param.N);
 %     pause(0.2);
 
-    z = param_.z_rec_oneshoot;
-    [~, ind] = max(z);
+    [~, ind] = max(param_.z_rec_oneshoot);
     ind(ind == 1) = 0;
     ind(ind == 2) = 1;
     ind(ind == 3) = -1;
     mmap_control.Data.z = ind';
-    mmap_control.Data.flag = uint8(1);
+    mmap_control.Data.x(1, :) = t:param_.predt:t + param_.N*param_.predt;
+    mmap_control.Data.x(2:4, :) = param_.x_rec_oneshoot(1:3, :);
     mmap_control.Data.diag = uint8(param_.diagnostics);
+    mmap_control.Data.flag = uint8(1);
+    mmap_control.Data.dt = usedTime;
+
+    fprintf(logFileID,'Timer in. t = %f, x1 = %f, %d, %d\r\n', state(1), state(2), size(param_.u_rec_oneshoot, 2), size(param_.x_rec_oneshoot, 2));
 
 end
 

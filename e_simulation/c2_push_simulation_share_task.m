@@ -29,7 +29,7 @@ param.mu = 0.3;         % 地面摩擦
 param.mu_c = 0.3;       % 操作摩擦
 param.g = 9.81;
 umg = param.mu * param.m * param.g;
-param.L = diag([1/2,1/2,0.11]) * diag([2/umg^2, 2/umg^2,...
+param.L = diag([0.5, 0.5, 0.2]) * diag([2/umg^2, 2/umg^2,...
                 2/(0.03825* umg)^2]);
 % 0.03825
 derive_jacobian(param);
@@ -37,7 +37,7 @@ derive_jacobian(param);
 %% ======================= 疯狂调参 ========================== %%
 % MPC objective parameter
 param.Q = 0.05 * diag([4, 4, 3, 0, 0]);    % 状态跟踪代价
-param.Q_N = 5 * diag([30, 30, 15, 0, 1]);    % 状态跟踪代价
+param.Q_N = 5 * diag([30, 30, 30, 0, 0]);    % 状态跟踪代价
 param.R = 0 * diag([10, 10, 2]);       % 控制跟踪代价
 param.R_d = 1 * diag([1, 5, 0.2]);       % 控制变化代价
 param.W = 0.2 * diag([0.5, 1, 1]);        % 状态先验代价，认为不滑动的状态较好
@@ -51,14 +51,14 @@ param.ul = [0, -0.02, -0.05]';
 param.uu = [0.05, 0.02, 0.05]';
 
 % 时间参数
-TimerPeriod = 0.3;              % 控制器计算定时器周期
-SolverLimitTime = 0.28;          % 优化器时间限制
-PredictHorizon = 0.7;           % Mpc预测时域
-PredictPeriod = 0.035;           % 优化间隔周期
+TimerPeriod = 0.1;              % 控制器计算定时器周期
+SolverLimitTime = 0.08;          % 优化器时间限制
+PredictHorizon = 0.5;           % Mpc预测时域
+PredictPeriod = 0.025;           % 优化间隔周期
 % N = floor(PredictHorizon/PredictPeriod);      % 优化问题大小
 LoopTime = 0.002;                   % 通讯线程单次循环时间
 FigureDataRecordPeriod = 0.01;      % 绘画记录数据周期
-TotalTime = 20;                  % 程序仿真总时间
+TotalTime = 10;                  % 程序仿真总时间
 
 param.v_star = param.l ;
 % x0 = [0, 0.05, pi/6, -0.05, 0.025]';
@@ -101,9 +101,10 @@ clf
 plot(t_plot, x_plot(6:8, :)', '*');
 hold on
 plot(t_plot, x_plot(1:3, :)');
-for i = 1:size(xpre_plot, 2)
-    red_part = xpre_plot{i}(1, :) <= xpre_plot{i}(1, 1) +dt_used(i) + param.predt;
-    blue_part = xpre_plot{i}(1, :) >= xpre_plot{i}(1, 1) +dt_used(i);
+di = floor(0.2 / param.ctrldt);
+for i = 1:di:size(xpre_plot, 2)
+    red_part = xpre_plot{i}(1, :) <= xpre_plot{i}(1, 1) +dt_used(i);
+    blue_part = xpre_plot{i}(1, :) >= xpre_plot{i}(1, 1) +dt_used(i) - param.predt;
     plot(xpre_plot{i}(1, red_part), xpre_plot{i}(2, red_part), 'r-');
     plot(xpre_plot{i}(1, red_part), xpre_plot{i}(3, red_part), 'r-');
     plot(xpre_plot{i}(1, red_part), xpre_plot{i}(4, red_part), 'r-');

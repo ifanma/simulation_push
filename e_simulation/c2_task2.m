@@ -63,13 +63,14 @@ function state = c2_task2(param)
         
         parameters_in = {x0, [A{:}], [B{:}], [u_star{:}], [x_star{:}]};
         solutions_out = {[u{:}], [x{:}], [z{:}]};
-        ops = sdpsettings('verbose', 1, 'solver','gurobi', 'savedebug', false, 'gurobi.timelimit', 0.28);
+        ops = sdpsettings('verbose', 1, 'solver','gurobi', 'savedebug', false, 'gurobi.timelimit', param.opttimelim);
         controller = optimizer(constraints, objective,ops,parameters_in,solutions_out);
         param.controller = controller;
         fprintf(logFileID, 'Controller build finished.\r\n');
     
         %% Timer初始化
-        t = timer('StartDelay', 0, 'Period', param.ctrldt, 'TasksToExecute', inf, 'ExecutionMode', 'fixedRate');
+        t = timer('StartDelay', 0, 'Period', param.ctrldt, 'TasksToExecute', inf,...
+            'BusyMode', 'queue', 'ExecutionMode', 'fixedRate');
         % t.TimerFcn = { @cb_timer, param};
         t.TimerFcn = {@c2_timer_cb, logFileID, param, mmap_state, mmap_control};
         t.StartFcn = @(x,y)fprintf(logFileID, 'Control Thread Started!\r\n');

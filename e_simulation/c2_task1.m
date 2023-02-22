@@ -79,7 +79,7 @@ function state = c2_task1(x0_, param)
         lastTime = currentTime;
         while (currentTime-startTime < param.tf)
             currentTime = toc;
-            fprintf(logFileID, 'currentTime = %f, dt = %f\r\n', currentTime, currentTime - lastTime);
+%             fprintf(logFileID, 'currentTime = %f, dt = %f\r\n', currentTime, currentTime - lastTime);
             lastTime = currentTime;
     
             joy = mmap.Data;

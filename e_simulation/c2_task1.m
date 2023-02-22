@@ -113,18 +113,19 @@ function state = c2_task1(x0_, param)
             state = [t_; double(x0_)];
             mmap_state.Data = state;
             control_data = mmap_control.Data;
-            fprintf(logFileID, '%f Here here.\r\n', control_data.flag);
+%             fprintf(logFileID, '%f Here here.\r\n', control_data.flag);
             
             % 计算控制
             if control_data.flag == 1
                 mmap_control.Data.flag = uint8(0);
-                fprintf(logFileID, 'Here here.\r\n');
                 if control_data.diag~= 0
                     fprintf(logFileID, 'Solver failed. please check.\r\n');
+                    assert(0, 'solver failed.');
                     break;
                 end
                 u_rec = control_data.u;
                 z_plot(:, end + 1) = control_data.z';
+                fprintf(logFileID, 'Here here. %f, %f, %f\r\n', u_rec(2, 1), u_rec(2, 2), u_rec(2, 3));
             end 
     
             if isempty(u_rec)
@@ -141,7 +142,7 @@ end
             end
             
             % mpc control
-            pos_joint = pos_joint + diag([0.5, 0.2])*v{1} * param.loopdt;
+            pos_joint = pos_joint + diag([0.6, 0.5])*v{1} * param.loopdt;
             pos_joint(pos_joint > 2) = 2;
             pos_joint(pos_joint < -2) = -2;
     

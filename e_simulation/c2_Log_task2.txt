@@ -1,121 +1,74 @@
 Program started
 Controller build finished.
 Waiting for starting communication thread.
-Waiting for starting communication thread.
-Waiting for starting communication thread.
-Waiting for starting communication thread.
-Waiting for starting communication thread.
-Waiting for starting communication thread.
-Waiting for starting communication thread.
-Waiting for starting communication thread.
-Waiting for starting communication thread.
-Waiting for starting communication thread.
-Waiting for starting communication thread.
-Waiting for starting communication thread.
-Waiting for starting communication thread.
-Waiting for starting communication thread.
-Waiting for starting communication thread.
 Control Thread Started!
-Timer in. t = 0.153720, x1 = 0.000057
-Timer in. t = 0.301451, x1 = 0.000061
-Timer in. t = 0.491476, x1 = 0.003811
-Timer in. t = 0.706376, x1 = 0.007108
-Timer in. t = 0.893426, x1 = 0.012138
-Timer in. t = 1.089915, x1 = 0.019496
-Timer in. t = 1.290546, x1 = 0.028058
-Timer in. t = 1.490253, x1 = 0.039595
-Timer in. t = 1.690343, x1 = 0.050231
-Timer in. t = 1.890696, x1 = 0.060452
-Timer in. t = 2.091340, x1 = 0.070850
-Timer in. t = 2.290581, x1 = 0.081347
-Timer in. t = 2.491489, x1 = 0.091428
-Timer in. t = 2.692339, x1 = 0.101272
-Timer in. t = 2.892144, x1 = 0.110898
-Timer in. t = 3.090905, x1 = 0.120836
-Timer in. t = 3.291530, x1 = 0.130053
-Timer in. t = 3.491416, x1 = 0.140115
-Timer in. t = 3.692236, x1 = 0.150474
-Timer in. t = 3.893255, x1 = 0.160841
-Timer in. t = 4.092753, x1 = 0.170567
-Timer in. t = 4.293437, x1 = 0.179765
-Timer in. t = 4.492237, x1 = 0.188570
-Timer in. t = 4.693072, x1 = 0.197945
-Timer in. t = 4.894412, x1 = 0.207410
-Timer in. t = 5.093465, x1 = 0.216672
-Timer in. t = 5.294005, x1 = 0.226333
-Timer in. t = 5.494603, x1 = 0.236417
-Timer in. t = 5.693511, x1 = 0.247244
-Timer in. t = 5.894374, x1 = 0.257333
-Timer in. t = 6.093904, x1 = 0.267563
-Timer in. t = 6.294588, x1 = 0.278883
-Timer in. t = 6.495045, x1 = 0.289374
-Timer in. t = 6.695932, x1 = 0.300143
-Timer in. t = 6.894736, x1 = 0.310786
-Timer in. t = 7.095508, x1 = 0.320836
-Timer in. t = 7.295817, x1 = 0.330580
-Timer in. t = 7.496067, x1 = 0.340591
-Timer in. t = 7.695649, x1 = 0.350577
-Timer in. t = 7.896882, x1 = 0.360798
-Timer in. t = 8.096063, x1 = 0.370379
-Timer in. t = 8.297228, x1 = 0.380742
-Timer in. t = 8.495870, x1 = 0.390774
-Timer in. t = 8.696408, x1 = 0.400992
-Timer in. t = 8.897913, x1 = 0.410625
-Timer in. t = 9.096406, x1 = 0.421080
-Timer in. t = 9.296550, x1 = 0.432048
-Timer in. t = 9.497237, x1 = 0.442253
-Timer in. t = 9.697862, x1 = 0.452315
-Timer in. t = 9.898671, x1 = 0.462082
-Timer in. t = 10.098268, x1 = 0.473231
-Timer in. t = 10.298636, x1 = 0.483022
-Timer in. t = 10.497649, x1 = 0.492733
-Timer in. t = 10.698280, x1 = 0.502818
-Timer in. t = 10.899832, x1 = 0.512063
-Timer in. t = 11.099450, x1 = 0.520588
-Timer in. t = 11.299233, x1 = 0.530523
-Timer in. t = 11.499882, x1 = 0.540408
-Timer in. t = 11.698153, x1 = 0.550575
-Timer in. t = 11.899190, x1 = 0.560666
-Timer in. t = 12.099012, x1 = 0.570484
-Timer in. t = 12.300711, x1 = 0.580862
-Timer in. t = 12.500666, x1 = 0.590347
-Timer in. t = 12.701131, x1 = 0.601211
-Timer in. t = 12.900194, x1 = 0.611438
-Timer in. t = 13.101022, x1 = 0.621284
-Timer in. t = 13.301231, x1 = 0.631303
-Timer in. t = 13.499674, x1 = 0.641545
-Timer in. t = 13.700198, x1 = 0.652505
-Timer in. t = 13.900846, x1 = 0.662151
-Timer in. t = 14.101268, x1 = 0.672965
-Timer in. t = 14.301405, x1 = 0.683200
-Timer in. t = 14.502404, x1 = 0.693345
-Timer in. t = 14.702651, x1 = 0.702715
-Timer in. t = 14.902778, x1 = 0.711707
-Timer in. t = 15.101549, x1 = 0.721518
-Timer in. t = 15.302041, x1 = 0.731274
-Timer in. t = 15.502534, x1 = 0.741216
-Timer in. t = 15.702644, x1 = 0.750850
-Timer in. t = 15.902748, x1 = 0.761445
-Timer in. t = 16.103351, x1 = 0.771450
-Timer in. t = 16.303744, x1 = 0.781859
-Timer in. t = 16.504118, x1 = 0.791651
-Timer in. t = 16.704263, x1 = 0.802186
-Timer in. t = 16.904115, x1 = 0.811966
-Timer in. t = 17.104428, x1 = 0.822223
-Timer in. t = 17.304115, x1 = 0.831946
-Timer in. t = 17.503948, x1 = 0.842197
-Timer in. t = 17.704241, x1 = 0.852271
-Timer in. t = 17.903979, x1 = 0.857527
-Timer in. t = 18.104489, x1 = 0.869392
-Timer in. t = 18.304627, x1 = 0.879841
-Timer in. t = 18.504433, x1 = 0.891108
-Timer in. t = 18.706526, x1 = 0.900189
-Timer in. t = 18.904656, x1 = 0.912110
-Timer in. t = 19.105608, x1 = 0.922341
-Timer in. t = 19.306432, x1 = 0.932382
-Timer in. t = 19.506704, x1 = 0.942723
-Timer in. t = 19.706377, x1 = 0.952816
-Timer in. t = 19.907100, x1 = 0.963069
-Timer in. t = 20.001219, x1 = 0.967321
+Timer in. t = 0.209215, x1 = 0.000054
+Timer in. t = 0.457203, x1 = 0.000602
+Timer in. t = 0.747128, x1 = 0.017599
+Timer in. t = 1.063361, x1 = 0.040220
+Timer in. t = 1.349180, x1 = 0.048906
+Timer in. t = 1.649008, x1 = 0.068370
+Timer in. t = 1.949730, x1 = 0.091017
+Timer in. t = 2.250262, x1 = 0.109703
+Timer in. t = 2.550244, x1 = 0.125515
+Timer in. t = 2.851702, x1 = 0.141283
+Timer in. t = 3.152022, x1 = 0.157604
+Timer in. t = 3.450744, x1 = 0.172338
+Timer in. t = 3.751676, x1 = 0.176834
+Timer in. t = 4.051901, x1 = 0.182605
+Timer in. t = 4.354133, x1 = 0.193253
+Timer in. t = 4.656204, x1 = 0.206938
+Timer in. t = 4.956750, x1 = 0.222300
+Timer in. t = 5.256139, x1 = 0.236531
+Timer in. t = 5.558004, x1 = 0.251744
+Timer in. t = 5.859641, x1 = 0.266504
+Timer in. t = 6.160128, x1 = 0.281672
+Timer in. t = 6.460328, x1 = 0.297079
+Timer in. t = 6.761607, x1 = 0.311387
+Timer in. t = 7.062919, x1 = 0.325674
+Timer in. t = 7.365123, x1 = 0.342049
+Timer in. t = 7.665477, x1 = 0.356951
+Timer in. t = 7.967283, x1 = 0.371119
+Timer in. t = 8.266610, x1 = 0.386106
+Timer in. t = 8.566051, x1 = 0.402407
+Timer in. t = 8.867985, x1 = 0.416649
+Timer in. t = 9.170059, x1 = 0.432015
+Timer in. t = 9.469915, x1 = 0.446510
+Timer in. t = 9.771982, x1 = 0.461630
+Timer in. t = 10.073401, x1 = 0.476927
+Timer in. t = 10.372901, x1 = 0.491565
+Timer in. t = 10.674792, x1 = 0.506090
+Timer in. t = 10.975579, x1 = 0.521620
+Timer in. t = 11.276389, x1 = 0.537731
+Timer in. t = 11.576978, x1 = 0.552219
+Timer in. t = 11.878459, x1 = 0.567318
+Timer in. t = 12.178605, x1 = 0.581753
+Timer in. t = 12.481558, x1 = 0.597589
+Timer in. t = 12.782929, x1 = 0.612521
+Timer in. t = 13.084273, x1 = 0.628266
+Timer in. t = 13.384865, x1 = 0.642302
+Timer in. t = 13.686318, x1 = 0.658162
+Timer in. t = 13.988374, x1 = 0.672860
+Timer in. t = 14.290270, x1 = 0.687375
+Timer in. t = 14.591294, x1 = 0.701434
+Timer in. t = 14.892684, x1 = 0.717325
+Timer in. t = 15.193258, x1 = 0.732471
+Timer in. t = 15.494161, x1 = 0.748661
+Timer in. t = 15.794431, x1 = 0.763737
+Timer in. t = 16.094067, x1 = 0.778920
+Timer in. t = 16.396572, x1 = 0.793633
+Timer in. t = 16.697973, x1 = 0.807824
+Timer in. t = 16.998638, x1 = 0.823234
+Timer in. t = 17.299831, x1 = 0.837654
+Timer in. t = 17.601040, x1 = 0.852748
+Timer in. t = 17.902416, x1 = 0.867465
+Timer in. t = 18.203198, x1 = 0.883318
+Timer in. t = 18.504270, x1 = 0.898090
+Timer in. t = 18.805281, x1 = 0.913712
+Timer in. t = 19.106393, x1 = 0.928964
+Timer in. t = 19.408127, x1 = 0.943805
+Timer in. t = 19.708825, x1 = 0.958416
+Timer in. t = 20.000907, x1 = 0.973766
+Timer in. t = 20.000907, x1 = 0.973766
 Control Thread Stopped!
 Timer stoped.

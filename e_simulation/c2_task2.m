@@ -21,7 +21,7 @@ function state = c2_task2(param)
         N = param.N;
         
         Q = param.Q; R = param.R; W = param.W; V = param.V;
-        Qn = param.Q_N;
+        Qn = param.Q_N; Rd = param.R_d;
         xl = param.xl; xu = param.xu;
         ul = param.ul; uu = param.uu;
 
@@ -46,6 +46,7 @@ function state = c2_task2(param)
             objective = objective +(x{k}-x_star{k})'*Q*(x{k}-x_star{k}) + (u{k}-u_star{k})'*R*(u{k}-u_star{k}) + z{k}' * W * z{k};
             if k ~= 1
                  objective = objective + (z{k} - z{k-1})' * V * (z{k} - z{k-1});
+                 objective = objective + (u{k} - u{k-1})' * Rd * (u{k} - u{k-1});
             end
             Mode1 = [u{k}(3) == 0, -param.mu_c*u{k}(1) <= u{k}(2)<= param.mu_c*u{k}(1)];
             Mode2 = [u{k}(3) >= 0, u{k}(2) == param.mu_c * u{k}(1)];

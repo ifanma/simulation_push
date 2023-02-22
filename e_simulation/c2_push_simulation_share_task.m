@@ -36,24 +36,25 @@ derive_jacobian(param);
 
 %% ======================= 疯狂调参 ========================== %%
 % MPC objective parameter
-param.Q = 1 * diag([40, 40, 20, 0, 0]);    % 状态跟踪代价
-param.Q_N = 3 * diag([30, 30, 5, 0, 0]);    % 状态跟踪代价
-param.R = 1 * diag([10, 0.1, 0.1]);       % 控制跟踪代价
-param.W = 0.5 * diag([0.5, 1, 1]);        % 状态先验代价，认为不滑动的状态较好
-param.V = 0.0 * diag([1, 1, 1]);          % 状态切换代价，认为不切换最好
+param.Q = 1 * diag([40, 40, 10, 0, 0]);    % 状态跟踪代价
+param.Q_N = 3 * diag([30, 30, 3, 0, 0]);    % 状态跟踪代价
+param.R = 1 * diag([0.5, 0.5, 0.2]);       % 控制跟踪代价
+param.R_d = 50 * diag([1, 10, 0.2]);       % 控制跟踪代价
+param.W = 0.0 * diag([0.5, 1, 1]);        % 状态先验代价，认为不滑动的状态较好
+param.V = 0.1 * diag([1, 1, 1]);          % 状态切换代价，认为不切换最好
 
 % MPC constraints parameter
 d = 0.01;
 param.xl = [-10, -10, -10, -param.l - 0.0005 - d, -param.l *0.9]';
 param.xu = [10, 10, 10, -param.l - 0.0005 + d, param.l*0.9]';
-param.ul = [0, -10, -10]';
-param.uu = [0.05, 10, 10]';
+param.ul = [0, -0.02, -0.05]';
+param.uu = [0.05, 0.02, 0.05]';
 
 % 时间参数
-TimerPeriod = 0.2;              % 控制器计算定时器周期
-SolverLimitTime = 0.2;          % 优化器时间限制
+TimerPeriod = 0.3;              % 控制器计算定时器周期
+SolverLimitTime = 0.28;          % 优化器时间限制
 PredictHorizon = 0.5;           % Mpc预测时域
-PredictPeriod = 0.05;           % 优化间隔周期
+PredictPeriod = 0.025;           % 优化间隔周期
 % N = floor(PredictHorizon/PredictPeriod);      % 优化问题大小
 LoopTime = 0.002;                   % 通讯线程单次循环时间
 FigureDataRecordPeriod = 0.01;      % 绘画记录数据周期

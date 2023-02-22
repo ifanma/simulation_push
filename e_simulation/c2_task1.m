@@ -66,7 +66,7 @@ function state = c2_task1(x0_, param)
         % 开始循环 
         x_plot = []; u_plot = []; usize_plot = []; t_plot = []; xpre_plot = {};
         u_rec = zeros(4, param.N); z_plot = []; joint_plot = []; uft_plot = [];
-        jft_plot = []; u_index = 0;
+        jft_plot = []; u_index = 0; dt_used = [];
         pos_cmd = pc(1:2);
         pos_joint = pos_cmd;
         angle_round = 0; ang_last = 0;
@@ -118,14 +118,18 @@ function state = c2_task1(x0_, param)
             % 计算控制
             if control_data.flag == 1
                 mmap_control.Data.flag = uint8(0);
-                if control_data.diag~= 0
+                if control_data.diag == 12
                     fprintf(logFileID, 'Solver failed. please check.\r\n');
                     assert(0, 'solver failed.');
                     break;
+                elseif control_data.diag == 3
+                    fprintf(logFileID, 'Solver timeout.\r\n');
                 end
+
                 fprintf(logFileID, 'Here here. %f, %f, %f\r\n', size(control_data.x, 2), size(u_rec, 2), size(control_data.u, 2));
                 u_rec(1, :) = control_data.x(1, 1:end-1);
                 u_rec(2:4, :) = control_data.u;
+                dt_used(:, end+1) = control_data.dt;
                 z_plot(:, end + 1) = control_data.z';
                 xpre_plot{end + 1} = control_data.x;
             end
@@ -143,7 +147,7 @@ end
             u_plot_ = u_this;
             
             % mpc control
-            pos_joint = pos_joint + diag([0.6, 0.5])*v{1} * param.loopdt;
+            pos_joint = pos_joint + diag([1, 1])*v{1} * param.loopdt;
             pos_joint(pos_joint > 2) = 2;
             pos_joint(pos_joint < -2) = -2;
     

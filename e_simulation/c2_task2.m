@@ -63,7 +63,7 @@ function state = c2_task2(param)
         
         parameters_in = {x0, [A{:}], [B{:}], [u_star{:}], [x_star{:}]};
         solutions_out = {[u{:}], [x{:}], [z{:}]};
-        ops = sdpsettings('verbose', 1, 'solver','gurobi', 'savedebug', false, 'gurobi.timelimit', param.opttimelim);
+        ops = sdpsettings('verbose', 1, 'solver','gurobi', 'savedebug', false, 'gurobi.timelimit', 0.28);
         controller = optimizer(constraints, objective,ops,parameters_in,solutions_out);
         param.controller = controller;
         fprintf(logFileID, 'Controller build finished.\r\n');
@@ -113,9 +113,9 @@ function c2_timer_cb(~, ~, logFileID, param, mmap_state, mmap_control)
     t = state(1);
     x = state(2:6);
 
-    t_star = tic;
+    t_start = tic;
     [~, param_] = controlEqn(t, x, param);
-    usedTime = toc(t_star);
+    usedTime = toc(t_start);
 
     mmap_control.Data.u = param_.u_rec_oneshoot;
 %     mmap_control.Data.u = repmat([0.25 / param.L(1,1), 0, 0]', 1, param.N);

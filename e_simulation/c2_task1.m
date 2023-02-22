@@ -118,12 +118,12 @@ function state = c2_task1(x0_, param)
             % 计算控制
             if control_data.flag == 1
                 mmap_control.Data.flag = uint8(0);
-                if control_data.diag == 12
+                if control_data.diag == 3
+                    fprintf(logFileID, 'Solver timeout.\r\n');
+                elseif control_data.diag ~= 0
                     fprintf(logFileID, 'Solver failed. please check.\r\n');
                     assert(0, 'solver failed.');
                     break;
-                elseif control_data.diag == 3
-                    fprintf(logFileID, 'Solver timeout.\r\n');
                 end
 
                 fprintf(logFileID, 'Here here. %f, %f, %f\r\n', size(control_data.x, 2), size(u_rec, 2), size(control_data.u, 2));

@@ -90,7 +90,9 @@ function state = c2_task2(param)
         t_star = tic;
         while toc(t_star) < param.tf
             pause(0.05);
-            if mmap_control.Data.diag ~= 0
+            fprintf(logFileID, 'wait for task final time: %f.\r\n', toc(t_star));
+            if mmap_control.Data.diag ~= 3 && mmap_control.Data.diag ~= 0
+                fprintf(logFileID, 'Solver failed\r\n');
                 break;
             end
         end
@@ -98,7 +100,7 @@ function state = c2_task2(param)
         fprintf(logFileID, 'Timer stoped.\r\n');
 
     catch ME
-        fprintf(logFileID, '%s.\r\n', ME.message);
+        fprintf(logFileID, 'Error in task: %s.\r\n', ME.message);
     end
 
     delete(timerfind);
@@ -110,30 +112,36 @@ end
 
 
 function c2_timer_cb(~, ~, logFileID, param, mmap_state, mmap_control)
-    state = mmap_state.Data;
-    t = state(1);
-    x = state(2:6);
+    try
+        state = mmap_state.Data;
+        t = state(1);
+        x = state(2:6);
 
-    t_start = tic;
-    [~, param_] = controlEqn(t, x, param);
-    usedTime = toc(t_start);
 
-    mmap_control.Data.u = param_.u_rec_oneshoot;
-%     mmap_control.Data.u = repmat([0.25 / param.L(1,1), 0, 0]', 1, param.N);
-%     pause(0.2);
+        t_start = tic;
+        [~, param_] = controlEqn(t, x, param);
+        usedTime = toc(t_start);
+    
+        mmap_control.Data.u = param_.u_rec_oneshoot;
+    %     mmap_control.Data.u = repmat([0.25 / param.L(1,1), 0, 0]', 1, param.N);
+    %     pause(0.2);
+    
+        [~, ind] = max(param_.z_rec_oneshoot);
+        ind(ind == 1) = 0;
+        ind(ind == 2) = 1;
+        ind(ind == 3) = -1;
+        mmap_control.Data.z = ind';
+        mmap_control.Data.x(1, :) = t:param_.predt:t + param_.N*param_.predt;
+        mmap_control.Data.x(2:4, :) = param_.x_rec_oneshoot(1:3, :);
+        mmap_control.Data.diag = uint8(param_.diagnostics);
+        mmap_control.Data.flag = uint8(1);
+        mmap_control.Data.dt = usedTime;
 
-    [~, ind] = max(param_.z_rec_oneshoot);
-    ind(ind == 1) = 0;
-    ind(ind == 2) = 1;
-    ind(ind == 3) = -1;
-    mmap_control.Data.z = ind';
-    mmap_control.Data.x(1, :) = t:param_.predt:t + param_.N*param_.predt;
-    mmap_control.Data.x(2:4, :) = param_.x_rec_oneshoot(1:3, :);
-    mmap_control.Data.diag = uint8(param_.diagnostics);
-    mmap_control.Data.flag = uint8(1);
-    mmap_control.Data.dt = usedTime;
+        fprintf(logFileID,'Timer in. t = %f, x1 = %f, %d, %d\r\n', state(1), state(2), size(param_.u_rec_oneshoot, 2), size(param_.x_rec_oneshoot, 2));
 
-    fprintf(logFileID,'Timer in. t = %f, x1 = %f, %d, %d\r\n', state(1), state(2), size(param_.u_rec_oneshoot, 2), size(param_.x_rec_oneshoot, 2));
+    catch ME
+        fprintf(logFileID,'Error in timer: %s\r\n', ME.identifier);
+    end
 
 end
 

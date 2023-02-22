@@ -36,19 +36,19 @@ derive_jacobian(param);
 
 %% ======================= 疯狂调参 ========================== %%
 % MPC objective parameter
-param.Q = 0.01 * diag([4, 4, 3, 0, 0]);    % 状态跟踪代价
-param.Q_N = 5 * diag([30, 30, 30, 0, 0]);    % 状态跟踪代价
+param.Q = 0.1 * diag([4, 4, 0.5, 0, 0]);    % 状态跟踪代价
+param.Q_N = 1 * diag([3, 3, 0.1, 0, 0]);    % 状态跟踪代价
 param.R = 0 * diag([10, 10, 2]);       % 控制跟踪代价
-param.R_d = 1 * diag([1, 5, 0.2]);       % 控制变化代价
-param.W = 0.2 * diag([0.5, 1, 1]);        % 状态先验代价，认为不滑动的状态较好
+param.R_d = 1 * diag([1, 1, 0.2]);       % 控制变化代价
+param.W = 0.2 * diag([0.8, 1, 1]);        % 状态先验代价，认为不滑动的状态较好
 param.V = 0.1 * diag([1, 1, 1]);          % 状态切换代价，认为不切换最好
 
 % MPC constraints parameter
 d = 0.01;
 param.xl = [-10, -10, -10, -param.l - 0.0005 - d, -param.l *0.9]';
 param.xu = [10, 10, 10, -param.l - 0.0005 + d, param.l*0.9]';
-param.ul = [0, -0.04, -0.05]';
-param.uu = [0.08, 0.04, 0.05]';
+param.ul = [0, -0.02, -0.05]';
+param.uu = [0.06, 0.02, 0.05]';
 
 % 时间参数
 TimerPeriod = 0.1;              % 控制器计算定时器周期

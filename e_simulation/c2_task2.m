@@ -87,8 +87,8 @@ function state = c2_task2(param)
         if param.DEBUG == 0
             t.start;
         end
-        tic
-        while toc < param.tf
+        t_star = tic;
+        while toc(t_star) < param.tf
             pause(0.05);
             if mmap_control.Data.diag ~= 0
                 break;

@@ -1,6 +1,6 @@
-function derive_jacobian(param)
+function derive_jacobian2(param)
 
-    x_star = sym('x_star', [5 1]);
+    x_star = sym('x', [5 1]);
     u_star = sym('u_star', [3 1]);
     
     f1 = pushDynamicsEqn(0, x_star, param, 1, u_star);
@@ -13,9 +13,9 @@ function derive_jacobian(param)
     fid=fopen(   'linearization.m','w');
     fprintf(fid, 'function [A, B] = linearization(t, param, dt, x)   \n\n');
     fprintf(fid, '[x_star, u_star] = param.traj(t, param);   \n\n');
-    fprintf(fid, 'x_star3 = x_star(3);   \n');
-    fprintf(fid, 'x_star4 = x_star(4);   \n');
-    fprintf(fid, 'x_star5 = x_star(5);   \n');
+    fprintf(fid, 'x3 = x(3);   \n');
+    fprintf(fid, 'x4 = x(4);   \n');
+    fprintf(fid, 'x5 = x(5);   \n');
     fprintf(fid, 'u_star1 = u_star(1);   \n');
     fprintf(fid, 'u_star2 = u_star(2);   \n');
     fprintf(fid, 'A = ...   \n');

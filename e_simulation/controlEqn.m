@@ -5,7 +5,7 @@ function [u, param] = controlEqn(t, x, param)
     
     i = 1;
     for t_ = t: param.predt: t + param.N * param.predt
-        [A{i}, B{i}] = linearization(t_, param, param.predt);
+        [A{i}, B{i}] = linearization(t_, param, param.predt, x);
         [x_star_{i}, u_star_{i}] = param.traj(t_, param);
         i = i+1;
     end

@@ -1,4 +1,4 @@
-function [A, B] = linearization(t, param, dt)   
+function [A, B] = linearization(t, param, dt, x)   
 
 [x_star, u_star] = param.traj(t, param);   
 

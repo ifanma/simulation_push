@@ -102,6 +102,7 @@ plot(t_plot, x_plot(6:8, :)', '*');
 hold on
 plot(t_plot, x_plot(1:3, :)');
 di = floor(0.2 / param.ctrldt);
+if di == 0, di = 1; end
 for i = 1:di:size(xpre_plot, 2)
     red_part = xpre_plot{i}(1, :) <= xpre_plot{i}(1, 1) +dt_used(i);
     blue_part = xpre_plot{i}(1, :) >= xpre_plot{i}(1, 1) +dt_used(i) - param.predt;

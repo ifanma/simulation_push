@@ -76,6 +76,7 @@ function state = c2_task1(x0_, param)
         startTime=toc;
         currentTime=toc;
         lastPlotTime = currentTime;
+        lastCtrlTime = currentTime;
         lastTime = currentTime;
         while (currentTime-startTime < param.tf)
             currentTime = toc;
@@ -127,6 +128,7 @@ function state = c2_task1(x0_, param)
                 end
 
                 fprintf(logFileID, 'Here here. %f, %f, %f\r\n', size(control_data.x, 2), size(u_rec, 2), size(control_data.u, 2));
+                u_rec = [];
                 u_rec(1, :) = control_data.x(1, 1:end-1);
                 u_rec(2:4, :) = control_data.u;
                 dt_used(:, end+1) = control_data.dt;
@@ -143,6 +145,16 @@ end
                 u_this = u_rec(2:4, u_ind);
                 u_index = u_ind;
             end
+
+%             if isempty(u_rec)
+%                 u_rec(:, 1) = [0 0 0 0 ]';
+%             end
+%             if currentTime - lastCtrlTime > param.predt
+%                 u_rec(:, 1) = [];
+%                 lastCtrlTime = currentTime;
+%             end
+%             u_this = u_rec(2:4, 1);
+
             v = calc_v(x0_, u_this, param, 1);
             u_plot_ = u_this;
             
@@ -167,6 +179,7 @@ end
                 x_plot(:, end +1) = [ref', x0_']';
                 u_plot(:, end + 1) = u_plot_;
                 usize_plot(:, end+1) = u_index;
+%                 usize_plot(:, end+1) = size(u_rec, 2);
                 t_plot(:, end+1) = currentTime;
                 joint_plot(:, end+1) = [pos_joint; realJx; realJy];
                 R = [cos(x0_(3)) -sin(x0_(3)) ; sin(x0_(3)) cos(x0_(3)) ]';

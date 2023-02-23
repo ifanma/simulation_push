@@ -1,218 +1,399 @@
 Program started
 Controller build finished.
 Waiting for starting communication thread.
-Waiting for starting communication thread.
-Waiting for starting communication thread.
-Waiting for starting communication thread.
-Waiting for starting communication thread.
-Waiting for starting communication thread.
-Waiting for starting communication thread.
-Waiting for starting communication thread.
-Waiting for starting communication thread.
-Waiting for starting communication thread.
 Control Thread Started!
-Timer in. t = 0.250242, x1 = 0.000045, 20, 21
-wait for task final time: 0.050143.
-wait for task final time: 0.100950.
-wait for task final time: 0.151642.
-wait for task final time: 0.202278.
-wait for task final time: 0.253814.
-wait for task final time: 0.305300.
-wait for task final time: 0.355831.
-wait for task final time: 0.406353.
-wait for task final time: 0.457390.
-wait for task final time: 0.507850.
-wait for task final time: 0.559057.
-wait for task final time: 0.609699.
-wait for task final time: 0.661144.
-wait for task final time: 0.712168.
-wait for task final time: 0.763278.
-Timer in. t = 1.135641, x1 = 0.011039, 20, 21
-wait for task final time: 0.881841.
-wait for task final time: 0.932390.
-wait for task final time: 0.983012.
-wait for task final time: 1.033495.
-wait for task final time: 1.084507.
-wait for task final time: 1.134972.
-wait for task final time: 1.185443.
-wait for task final time: 1.236003.
-wait for task final time: 1.287284.
-wait for task final time: 1.338279.
-wait for task final time: 1.389328.
-wait for task final time: 1.439792.
-wait for task final time: 1.490296.
-wait for task final time: 1.540755.
-wait for task final time: 1.592076.
-wait for task final time: 1.642534.
-wait for task final time: 1.692964.
-wait for task final time: 1.744223.
-wait for task final time: 1.795257.
-Timer in. t = 2.117382, x1 = 0.024395, 20, 21
-wait for task final time: 1.862849.
-wait for task final time: 1.913137.
-wait for task final time: 1.964657.
-wait for task final time: 2.015620.
-wait for task final time: 2.066096.
-wait for task final time: 2.116610.
-wait for task final time: 2.167814.
-wait for task final time: 2.218353.
-wait for task final time: 2.268829.
-wait for task final time: 2.320443.
-wait for task final time: 2.370910.
-wait for task final time: 2.421373.
-wait for task final time: 2.471933.
-wait for task final time: 2.522524.
-wait for task final time: 2.573007.
-wait for task final time: 2.623486.
-wait for task final time: 2.673993.
-wait for task final time: 2.725026.
-wait for task final time: 2.776083.
-Timer in. t = 3.129121, x1 = 0.037416, 20, 21
-wait for task final time: 2.875375.
-wait for task final time: 2.925715.
-wait for task final time: 2.976248.
-wait for task final time: 3.027340.
-wait for task final time: 3.077799.
-wait for task final time: 3.128369.
-wait for task final time: 3.178810.
-wait for task final time: 3.230214.
-wait for task final time: 3.280810.
-wait for task final time: 3.331927.
-wait for task final time: 3.382903.
-wait for task final time: 3.433374.
-wait for task final time: 3.485621.
-wait for task final time: 3.536193.
-wait for task final time: 3.586818.
-wait for task final time: 3.637295.
-wait for task final time: 3.687802.
-wait for task final time: 3.738928.
-wait for task final time: 3.789379.
-Timer in. t = 4.152810, x1 = 0.049851, 20, 21
-wait for task final time: 3.900252.
-wait for task final time: 3.951107.
-wait for task final time: 4.002165.
-wait for task final time: 4.053198.
-wait for task final time: 4.103682.
-wait for task final time: 4.154301.
-wait for task final time: 4.205350.
-wait for task final time: 4.255822.
-wait for task final time: 4.306987.
-wait for task final time: 4.357459.
-wait for task final time: 4.408075.
-wait for task final time: 4.458564.
-wait for task final time: 4.509169.
-wait for task final time: 4.560849.
-wait for task final time: 4.611295.
-wait for task final time: 4.661725.
-wait for task final time: 4.712199.
-wait for task final time: 4.763031.
-wait for task final time: 4.813496.
-Timer in. t = 5.105944, x1 = 0.061145, 20, 21
-wait for task final time: 4.864077.
-wait for task final time: 4.914827.
-wait for task final time: 4.966216.
-wait for task final time: 5.016688.
-wait for task final time: 5.067152.
-wait for task final time: 5.118366.
-wait for task final time: 5.168839.
-wait for task final time: 5.219290.
-wait for task final time: 5.269752.
-wait for task final time: 5.320324.
-wait for task final time: 5.371118.
-wait for task final time: 5.422188.
-wait for task final time: 5.473217.
-wait for task final time: 5.524277.
-wait for task final time: 5.575189.
-wait for task final time: 5.625637.
-wait for task final time: 5.676295.
-wait for task final time: 5.726783.
-wait for task final time: 5.777238.
-Timer in. t = 6.103665, x1 = 0.072325, 20, 21
-wait for task final time: 5.850190.
-wait for task final time: 5.900443.
-wait for task final time: 5.951526.
-wait for task final time: 6.002318.
-wait for task final time: 6.053621.
-wait for task final time: 6.104057.
-wait for task final time: 6.154715.
-wait for task final time: 6.205774.
-wait for task final time: 6.256806.
-wait for task final time: 6.308423.
-wait for task final time: 6.358940.
-wait for task final time: 6.409384.
-wait for task final time: 6.459851.
-wait for task final time: 6.510297.
-wait for task final time: 6.562180.
-wait for task final time: 6.613231.
-wait for task final time: 6.663686.
-wait for task final time: 6.714168.
-wait for task final time: 6.764673.
-wait for task final time: 6.815411.
-Timer in. t = 7.106059, x1 = 0.082500, 20, 21
-wait for task final time: 6.866458.
-wait for task final time: 6.916925.
-wait for task final time: 6.967995.
-wait for task final time: 7.019033.
-wait for task final time: 7.070093.
-wait for task final time: 7.120628.
-wait for task final time: 7.171067.
-wait for task final time: 7.221535.
-wait for task final time: 7.272819.
-wait for task final time: 7.323858.
-wait for task final time: 7.374345.
-wait for task final time: 7.424836.
-wait for task final time: 7.475329.
-wait for task final time: 7.525793.
-wait for task final time: 7.577587.
-wait for task final time: 7.628052.
-wait for task final time: 7.678488.
-wait for task final time: 7.729757.
-wait for task final time: 7.780797.
-Timer in. t = 8.105510, x1 = 0.091849, 20, 21
-wait for task final time: 7.852272.
-wait for task final time: 7.902581.
-wait for task final time: 7.953937.
-wait for task final time: 8.004471.
-wait for task final time: 8.054920.
-wait for task final time: 8.105389.
-wait for task final time: 8.155923.
-wait for task final time: 8.207786.
-wait for task final time: 8.258241.
-wait for task final time: 8.309460.
-wait for task final time: 8.359930.
-wait for task final time: 8.410371.
-wait for task final time: 8.462418.
-wait for task final time: 8.514427.
-wait for task final time: 8.565010.
-wait for task final time: 8.615479.
-wait for task final time: 8.666114.
-wait for task final time: 8.716589.
-wait for task final time: 8.767187.
-wait for task final time: 8.817666.
-Timer in. t = 9.107858, x1 = 0.100275, 20, 21
-wait for task final time: 8.868268.
-wait for task final time: 8.918660.
-wait for task final time: 8.969402.
-wait for task final time: 9.019892.
-wait for task final time: 9.070334.
-wait for task final time: 9.120782.
-wait for task final time: 9.171551.
-wait for task final time: 9.222029.
-wait for task final time: 9.272581.
-wait for task final time: 9.323058.
-wait for task final time: 9.374288.
-wait for task final time: 9.425328.
-wait for task final time: 9.475818.
-wait for task final time: 9.526260.
-wait for task final time: 9.578050.
-wait for task final time: 9.629103.
-wait for task final time: 9.679623.
-wait for task final time: 9.730193.
-wait for task final time: 9.780673.
-Timer in. t = 10.000332, x1 = 0.106602, 20, 21
-wait for task final time: 9.855694.
-wait for task final time: 9.905977.
-wait for task final time: 9.957399.
-wait for task final time: 10.007943.
+Timer in. t = 0.625015, x1 = 0.000048, 25, 26
+Timer in. t = 0.826938, x1 = 0.001027, 25, 26
+Timer in. t = 0.990952, x1 = 0.010224, 25, 26
+Timer in. t = 1.168772, x1 = 0.021798, 25, 26
+Timer in. t = 1.409150, x1 = 0.037391, 25, 26
+Timer in. t = 1.549606, x1 = 0.045270, 25, 26
+Timer in. t = 1.715341, x1 = 0.057911, 25, 26
+Timer in. t = 1.806930, x1 = 0.063846, 25, 26
+wait for task final time: 0.051028.
+Timer in. t = 1.993334, x1 = 0.073492, 25, 26
+wait for task final time: 0.186192.
+wait for task final time: 0.237034.
+wait for task final time: 0.288978.
+Timer in. t = 2.219162, x1 = 0.085028, 25, 26
+wait for task final time: 0.413656.
+wait for task final time: 0.464534.
+Timer in. t = 2.407148, x1 = 0.096353, 25, 26
+wait for task final time: 0.603185.
+wait for task final time: 0.654060.
+Timer in. t = 2.603261, x1 = 0.106380, 25, 26
+wait for task final time: 0.797271.
+wait for task final time: 0.848260.
+Timer in. t = 2.816880, x1 = 0.117852, 25, 26
+wait for task final time: 1.009764.
+wait for task final time: 1.060137.
+Timer in. t = 3.010116, x1 = 0.128118, 25, 26
+wait for task final time: 1.203494.
+wait for task final time: 1.254142.
+Timer in. t = 3.210881, x1 = 0.138757, 25, 26
+wait for task final time: 1.405067.
+wait for task final time: 1.455882.
+Timer in. t = 3.401387, x1 = 0.149497, 25, 26
+wait for task final time: 1.595560.
+wait for task final time: 1.646124.
+wait for task final time: 1.697096.
+Timer in. t = 3.671288, x1 = 0.164742, 25, 26
+wait for task final time: 1.866111.
+Timer in. t = 3.874492, x1 = 0.175630, 25, 26
+wait for task final time: 2.068849.
+Timer in. t = 3.993453, x1 = 0.181135, 25, 26
+wait for task final time: 2.186994.
+wait for task final time: 2.238063.
+wait for task final time: 2.288552.
+Timer in. t = 4.209377, x1 = 0.193715, 25, 26
+wait for task final time: 2.402465.
+wait for task final time: 2.452714.
+wait for task final time: 2.503169.
+Timer in. t = 4.392175, x1 = 0.202852, 25, 26
+wait for task final time: 2.585801.
+wait for task final time: 2.636057.
+wait for task final time: 2.686575.
+Timer in. t = 4.592010, x1 = 0.212229, 25, 26
+wait for task final time: 2.786170.
+wait for task final time: 2.836917.
+wait for task final time: 2.887947.
+Timer in. t = 4.795552, x1 = 0.222975, 25, 26
+wait for task final time: 2.988608.
+wait for task final time: 3.038874.
+wait for task final time: 3.089402.
+Timer in. t = 4.997090, x1 = 0.232763, 25, 26
+wait for task final time: 3.191881.
+wait for task final time: 3.242812.
+wait for task final time: 3.294432.
+Timer in. t = 5.194483, x1 = 0.242674, 25, 26
+wait for task final time: 3.387591.
+wait for task final time: 3.437851.
+wait for task final time: 3.488337.
+Timer in. t = 5.393385, x1 = 0.251847, 25, 26
+wait for task final time: 3.588189.
+wait for task final time: 3.638729.
+wait for task final time: 3.689822.
+Timer in. t = 5.593854, x1 = 0.262197, 25, 26
+wait for task final time: 3.788018.
+wait for task final time: 3.838407.
+wait for task final time: 3.888926.
+Timer in. t = 5.794662, x1 = 0.272091, 25, 26
+wait for task final time: 3.988155.
+wait for task final time: 4.038489.
+wait for task final time: 4.089292.
+Timer in. t = 5.991022, x1 = 0.281387, 25, 26
+wait for task final time: 4.185440.
+wait for task final time: 4.235830.
+wait for task final time: 4.287441.
+Timer in. t = 6.192623, x1 = 0.292738, 25, 26
+wait for task final time: 4.387369.
+wait for task final time: 4.439322.
+wait for task final time: 4.489859.
+Timer in. t = 6.390663, x1 = 0.302285, 25, 26
+wait for task final time: 4.583865.
+wait for task final time: 4.634134.
+wait for task final time: 4.684617.
+Timer in. t = 6.601744, x1 = 0.312726, 25, 26
+wait for task final time: 4.795420.
+wait for task final time: 4.846695.
+wait for task final time: 4.897722.
+Timer in. t = 6.800382, x1 = 0.322613, 25, 26
+wait for task final time: 4.993657.
+wait for task final time: 5.044402.
+wait for task final time: 5.095447.
+Timer in. t = 6.993651, x1 = 0.332649, 25, 26
+wait for task final time: 5.187497.
+wait for task final time: 5.237785.
+wait for task final time: 5.288391.
+Timer in. t = 7.203420, x1 = 0.343234, 25, 26
+wait for task final time: 5.397297.
+wait for task final time: 5.447666.
+wait for task final time: 5.498518.
+Timer in. t = 7.402825, x1 = 0.353313, 25, 26
+wait for task final time: 5.596095.
+wait for task final time: 5.646349.
+wait for task final time: 5.697704.
+Timer in. t = 7.604916, x1 = 0.363963, 25, 26
+wait for task final time: 5.797709.
+wait for task final time: 5.847993.
+wait for task final time: 5.898512.
+Timer in. t = 7.805549, x1 = 0.374041, 25, 26
+wait for task final time: 5.999890.
+wait for task final time: 6.050208.
+wait for task final time: 6.100676.
+Timer in. t = 8.006294, x1 = 0.384199, 25, 26
+wait for task final time: 6.200099.
+wait for task final time: 6.250345.
+wait for task final time: 6.301354.
+Timer in. t = 8.203414, x1 = 0.394265, 25, 26
+wait for task final time: 6.397374.
+wait for task final time: 6.448473.
+wait for task final time: 6.498941.
+Timer in. t = 8.416805, x1 = 0.404207, 25, 26
+wait for task final time: 6.611666.
+wait for task final time: 6.661919.
+wait for task final time: 6.712405.
+Timer in. t = 8.608862, x1 = 0.414406, 25, 26
+wait for task final time: 6.803335.
+wait for task final time: 6.853592.
+wait for task final time: 6.904136.
+Timer in. t = 8.849226, x1 = 0.426307, 25, 26
+wait for task final time: 7.043514.
+wait for task final time: 7.094700.
+Timer in. t = 9.037936, x1 = 0.436009, 25, 26
+wait for task final time: 7.232050.
+wait for task final time: 7.283549.
+Timer in. t = 9.236781, x1 = 0.446147, 25, 26
+wait for task final time: 7.430378.
+wait for task final time: 7.480638.
+Timer in. t = 9.437190, x1 = 0.455644, 25, 26
+wait for task final time: 7.630117.
+wait for task final time: 7.680911.
+wait for task final time: 7.731963.
+Timer in. t = 9.634229, x1 = 0.465761, 25, 26
+wait for task final time: 7.879659.
+wait for task final time: 7.930101.
+Timer in. t = 9.812321, x1 = 0.474590, 25, 26
+wait for task final time: 8.006500.
+wait for task final time: 8.057365.
+wait for task final time: 8.107859.
+Timer in. t = 10.036495, x1 = 0.486416, 25, 26
+wait for task final time: 8.231170.
+wait for task final time: 8.282141.
+wait for task final time: 8.333211.
+Timer in. t = 10.228321, x1 = 0.495299, 25, 26
+wait for task final time: 8.421922.
+wait for task final time: 8.472177.
+wait for task final time: 8.523405.
+Timer in. t = 10.406600, x1 = 0.504909, 25, 26
+wait for task final time: 8.601081.
+wait for task final time: 8.651351.
+wait for task final time: 8.701818.
+Timer in. t = 10.604659, x1 = 0.514309, 25, 26
+wait for task final time: 8.799218.
+wait for task final time: 8.849491.
+wait for task final time: 8.900703.
+Timer in. t = 10.804391, x1 = 0.524061, 25, 26
+wait for task final time: 8.999173.
+wait for task final time: 9.050380.
+wait for task final time: 9.100850.
+Timer in. t = 11.009734, x1 = 0.534808, 25, 26
+wait for task final time: 9.202837.
+wait for task final time: 9.253131.
+wait for task final time: 9.305277.
+Timer in. t = 11.224343, x1 = 0.545456, 25, 26
+wait for task final time: 9.418449.
+wait for task final time: 9.468711.
+wait for task final time: 9.519351.
+Timer in. t = 11.406510, x1 = 0.554700, 25, 26
+wait for task final time: 9.599649.
+wait for task final time: 9.649903.
+wait for task final time: 9.700349.
+Timer in. t = 11.615011, x1 = 0.564780, 25, 26
+wait for task final time: 9.808109.
+wait for task final time: 9.858375.
+wait for task final time: 9.909057.
+Timer in. t = 11.807965, x1 = 0.574506, 25, 26
+wait for task final time: 10.001343.
+wait for task final time: 10.052390.
+wait for task final time: 10.103416.
+Timer in. t = 12.004671, x1 = 0.584174, 25, 26
+wait for task final time: 10.199061.
+wait for task final time: 10.249607.
+wait for task final time: 10.301155.
+Timer in. t = 12.207296, x1 = 0.594965, 25, 26
+wait for task final time: 10.400123.
+wait for task final time: 10.451301.
+wait for task final time: 10.502359.
+Timer in. t = 12.407389, x1 = 0.604770, 25, 26
+wait for task final time: 10.602376.
+wait for task final time: 10.652641.
+wait for task final time: 10.703082.
+Timer in. t = 12.614837, x1 = 0.614437, 25, 26
+wait for task final time: 10.808042.
+wait for task final time: 10.858294.
+wait for task final time: 10.909702.
+Timer in. t = 12.809461, x1 = 0.624126, 25, 26
+wait for task final time: 11.003205.
+wait for task final time: 11.053480.
+wait for task final time: 11.103987.
+Timer in. t = 13.011712, x1 = 0.634452, 25, 26
+wait for task final time: 11.204660.
+wait for task final time: 11.255557.
+wait for task final time: 11.306276.
+Timer in. t = 13.214419, x1 = 0.644411, 25, 26
+wait for task final time: 11.408564.
+wait for task final time: 11.459386.
+wait for task final time: 11.510449.
+Timer in. t = 13.407576, x1 = 0.654367, 25, 26
+wait for task final time: 11.602097.
+wait for task final time: 11.652361.
+wait for task final time: 11.702830.
+Timer in. t = 13.614860, x1 = 0.664658, 25, 26
+wait for task final time: 11.808893.
+wait for task final time: 11.859771.
+wait for task final time: 11.910224.
+Timer in. t = 13.819788, x1 = 0.674883, 25, 26
+wait for task final time: 12.013964.
+wait for task final time: 12.064514.
+wait for task final time: 12.116337.
+Timer in. t = 14.037029, x1 = 0.686228, 25, 26
+wait for task final time: 12.231226.
+wait for task final time: 12.282421.
+wait for task final time: 12.332877.
+Timer in. t = 14.216602, x1 = 0.694345, 25, 26
+wait for task final time: 12.410243.
+wait for task final time: 12.460487.
+wait for task final time: 12.511635.
+Timer in. t = 14.416781, x1 = 0.704632, 25, 26
+wait for task final time: 12.609539.
+wait for task final time: 12.660767.
+wait for task final time: 12.711819.
+Timer in. t = 14.618264, x1 = 0.714264, 25, 26
+wait for task final time: 12.812563.
+wait for task final time: 12.862983.
+wait for task final time: 12.913471.
+Timer in. t = 14.816755, x1 = 0.724023, 25, 26
+wait for task final time: 13.010188.
+wait for task final time: 13.060435.
+wait for task final time: 13.111713.
+Timer in. t = 15.022342, x1 = 0.734454, 25, 26
+wait for task final time: 13.215310.
+wait for task final time: 13.265563.
+wait for task final time: 13.316511.
+Timer in. t = 15.219773, x1 = 0.744999, 25, 26
+wait for task final time: 13.413740.
+wait for task final time: 13.464009.
+wait for task final time: 13.514461.
+Timer in. t = 15.428945, x1 = 0.754982, 25, 26
+wait for task final time: 13.622001.
+wait for task final time: 13.672806.
+wait for task final time: 13.723854.
+Timer in. t = 15.618311, x1 = 0.764424, 25, 26
+wait for task final time: 13.812798.
+wait for task final time: 13.863978.
+wait for task final time: 13.915029.
+Timer in. t = 15.818879, x1 = 0.774293, 25, 26
+wait for task final time: 14.012994.
+wait for task final time: 14.063727.
+wait for task final time: 14.114182.
+Timer in. t = 16.021634, x1 = 0.784906, 25, 26
+wait for task final time: 14.214555.
+wait for task final time: 14.265521.
+wait for task final time: 14.316523.
+Timer in. t = 16.225844, x1 = 0.794412, 25, 26
+wait for task final time: 14.419490.
+wait for task final time: 14.469733.
+wait for task final time: 14.520563.
+Timer in. t = 16.427928, x1 = 0.805235, 25, 26
+wait for task final time: 14.622142.
+wait for task final time: 14.673642.
+wait for task final time: 14.724090.
+Timer in. t = 16.635424, x1 = 0.815742, 25, 26
+wait for task final time: 14.828199.
+wait for task final time: 14.878842.
+wait for task final time: 14.929520.
+Timer in. t = 16.828368, x1 = 0.824814, 25, 26
+wait for task final time: 15.022597.
+wait for task final time: 15.073068.
+wait for task final time: 15.123655.
+Timer in. t = 17.027739, x1 = 0.835844, 25, 26
+wait for task final time: 15.221931.
+wait for task final time: 15.273561.
+wait for task final time: 15.324435.
+Timer in. t = 17.228695, x1 = 0.845163, 25, 26
+wait for task final time: 15.423155.
+wait for task final time: 15.473555.
+wait for task final time: 15.524021.
+Timer in. t = 17.434917, x1 = 0.856512, 25, 26
+wait for task final time: 15.628125.
+wait for task final time: 15.678751.
+wait for task final time: 15.729813.
+Timer in. t = 17.632110, x1 = 0.866676, 25, 26
+wait for task final time: 15.827056.
+wait for task final time: 15.877936.
+wait for task final time: 15.928437.
+Timer in. t = 17.839775, x1 = 0.876634, 25, 26
+wait for task final time: 16.033617.
+wait for task final time: 16.084665.
+wait for task final time: 16.135158.
+Timer in. t = 18.037124, x1 = 0.886829, 25, 26
+wait for task final time: 16.231487.
+wait for task final time: 16.282382.
+wait for task final time: 16.332846.
+Timer in. t = 18.238530, x1 = 0.896650, 25, 26
+wait for task final time: 16.431863.
+wait for task final time: 16.482571.
+wait for task final time: 16.533053.
+Timer in. t = 18.435759, x1 = 0.906505, 25, 26
+wait for task final time: 16.630166.
+wait for task final time: 16.680746.
+wait for task final time: 16.731211.
+Timer in. t = 18.639285, x1 = 0.915970, 25, 26
+wait for task final time: 16.833550.
+wait for task final time: 16.883946.
+wait for task final time: 16.934987.
+Timer in. t = 18.840715, x1 = 0.925923, 25, 26
+wait for task final time: 17.034914.
+wait for task final time: 17.085366.
+wait for task final time: 17.136454.
+Timer in. t = 19.046740, x1 = 0.936360, 25, 26
+wait for task final time: 17.240064.
+wait for task final time: 17.290355.
+wait for task final time: 17.341390.
+Timer in. t = 19.246595, x1 = 0.946223, 25, 26
+wait for task final time: 17.439827.
+wait for task final time: 17.490593.
+wait for task final time: 17.541576.
+Timer in. t = 19.446664, x1 = 0.956523, 25, 26
+wait for task final time: 17.640228.
+wait for task final time: 17.690748.
+wait for task final time: 17.741196.
+Timer in. t = 19.640877, x1 = 0.966625, 25, 26
+wait for task final time: 17.834276.
+wait for task final time: 17.884534.
+wait for task final time: 17.935013.
+Timer in. t = 19.841605, x1 = 0.975915, 25, 26
+wait for task final time: 18.034854.
+wait for task final time: 18.085638.
+wait for task final time: 18.136672.
+Timer in. t = 20.000846, x1 = 0.975987, 25, 26
+wait for task final time: 18.245434.
+wait for task final time: 18.295932.
+wait for task final time: 18.346564.
+Timer in. t = 20.000846, x1 = 0.975987, 25, 26
+wait for task final time: 18.438173.
+wait for task final time: 18.488450.
+wait for task final time: 18.539431.
+Timer in. t = 20.000846, x1 = 0.975987, 25, 26
+wait for task final time: 18.643528.
+wait for task final time: 18.694633.
+wait for task final time: 18.745631.
+Timer in. t = 20.000846, x1 = 0.975987, 25, 26
+wait for task final time: 18.846676.
+wait for task final time: 18.897048.
+wait for task final time: 18.947816.
+Timer in. t = 20.000846, x1 = 0.975987, 25, 26
+wait for task final time: 19.047684.
+wait for task final time: 19.097945.
+wait for task final time: 19.149535.
+Timer in. t = 20.000846, x1 = 0.975987, 25, 26
+wait for task final time: 19.239308.
+wait for task final time: 19.289903.
+wait for task final time: 19.341275.
+Timer in. t = 20.000846, x1 = 0.975987, 25, 26
+wait for task final time: 19.444519.
+wait for task final time: 19.494772.
+wait for task final time: 19.545302.
+Timer in. t = 20.000846, x1 = 0.975987, 25, 26
+wait for task final time: 19.638560.
+wait for task final time: 19.689763.
+wait for task final time: 19.740811.
+Timer in. t = 20.000846, x1 = 0.975987, 25, 26
+wait for task final time: 19.839896.
+wait for task final time: 19.890160.
+wait for task final time: 19.940986.
+Timer in. t = 20.000846, x1 = 0.975987, 25, 26
+wait for task final time: 20.051492.
 Control Thread Stopped!
 Timer stoped.

@@ -8,17 +8,17 @@ x_star5 = x_star(5);
 u_star1 = u_star(1);   
 u_star2 = u_star(2);   
 A = ...   
-[[0, 0, 1.283*u_star2*cos(x_star3) - 1.283*u_star1*sin(x_star3), 0, 0]
-[0, 0, 1.283*u_star1*cos(x_star3) + 1.283*u_star2*sin(x_star3), 0, 0]
-[0, 0, 0, -350.7*u_star2, -350.7*u_star1]
+[[0, 0, 0.7216*u_star2*cos(x_star3) - 0.7216*u_star1*sin(x_star3), 0, 0]
+[0, 0, 0.7216*u_star1*cos(x_star3) + 0.7216*u_star2*sin(x_star3), 0, 0]
+[0, 0, 0, -197.3*u_star2, -197.3*u_star1]
 [0, 0, 0, 0, 0]
 [0, 0, 0, 0, 0]];
 A = dt * A + eye(5);  
 
 B = dt * ...  
-[[1.283*cos(x_star3), 1.283*sin(x_star3), 0]
-[1.283*sin(x_star3), -1.283*cos(x_star3), 0]
-[-350.7*conj(x_star5), -350.7*conj(x_star4), 0]
+[[0.7216*cos(x_star3), 0.7216*sin(x_star3), 0]
+[0.7216*sin(x_star3), -0.7216*cos(x_star3), 0]
+[-197.3*conj(x_star5), -197.3*conj(x_star4), 0]
 [0, 0, 0]
 [0, 0, -1.0]];
 end  

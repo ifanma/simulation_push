@@ -25,8 +25,8 @@ param.l = 0.05;
 param.polygen = param.l *[-1 -1 1 1;
                           -1 1 1 -1];
 param.m = 0.3;
-param.mu = 0.3;         % 地面摩擦
-param.mu_c = 0.2;       % 操作摩擦
+param.mu = 0.4;         % 地面摩擦
+param.mu_c = 0.3;       % 操作摩擦
 param.g = 9.81;
 umg = param.mu * param.m * param.g;
 param.L = diag([0.5, 0.5, 0.2]) * diag([2/umg^2, 2/umg^2,...
@@ -36,10 +36,10 @@ derive_jacobian(param);
 
 %% ======================= 疯狂调参 ========================== %%
 % MPC objective parameter
-param.Q = 2 * diag([4, 4, 0.005, 0, 0]);    % 状态跟踪代价
-param.Q_N = 1 * diag([300, 300, 0.5, 0, 0]);    % 状态跟踪代价
-param.R = 0 * diag([10, 10, 2]);       % 控制跟踪代价
-param.R_d = 10 * diag([1, 1, 0.2]);       % 控制变化代价
+param.Q = 300 * diag([1, 1, 0.01, 0, 0]);    % 状态跟踪代价
+param.Q_N = 100 * diag([1, 1, 0.2, 0, 0]);    % 状态跟踪代价
+param.R = 100 * diag([0, 1, 0]);       % 控制跟踪代价
+param.R_d = 100 * diag([1, 1, 0.2]);       % 控制变化代价
 param.W = 0.0 * diag([0.8, 1, 1]);        % 状态先验代价，认为不滑动的状态较好
 param.V = 0.5 * diag([1, 1, 1]);          % 状态切换代价，认为不切换最好
 
@@ -47,8 +47,8 @@ param.V = 0.5 * diag([1, 1, 1]);          % 状态切换代价，认为不切换
 d = 0.01;
 param.xl = [-10, -10, -10, -param.l - 0.0005 - d, -param.l *0.9]';
 param.xu = [10, 10, 10, -param.l - 0.0005 + d, param.l*0.9]';
-param.ul = [0, -0.02, -0.02]';
-param.uu = [0.06, 0.02, 0.02]';
+param.ul = [0, -0.04, -0.02]';
+param.uu = [0.1, 0.04, 0.02]';
 
 % 时间参数
 TimerPeriod = 0.2;              % 控制器计算定时器周期

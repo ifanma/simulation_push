@@ -35,7 +35,7 @@ function state = c2_task1(x0_, param)
         else
             fprintf(logFileID, 'Remote API function call returned with error code: %d\r\n',res);
         end
-    
+
         [~, Jx_h] = sim.simxGetObjectHandle(clientID, 'Jx', sim.simx_opmode_blocking);
         [~, Jy_h] = sim.simxGetObjectHandle(clientID, 'Jy', sim.simx_opmode_blocking);
         [~, cb_h] = sim.simxGetObjectHandle(clientID, './Cuboid[0]', sim.simx_opmode_blocking);

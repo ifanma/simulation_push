@@ -135,6 +135,7 @@ function state = c3_task1(x0_, param)
                 u_rec = [];
                 u_rec(1, :) = control_data.x(1, 1:end-1);
                 u_rec(2:4, :) = control_data.u;
+                u_rec(:, 1) = [];
                 dt_used(:, end+1) = control_data.dt;
                 z_plot(:, end + 1) = control_data.z';
                 xpre_plot{end + 1} = control_data.x;
@@ -149,7 +150,7 @@ if param.DEBUG ==1
             u_rec(:, 1) = [0.1 / param.L(1,1), 0.02 / param.L(1,1), 0]';
 end
 
-            u_ind = find((currentTime - u_rec(1, :)>0) & (currentTime-u_rec(1, :)<=param.loopdt), 1);
+            u_ind = find((currentTime - u_rec(1, :)>0.0001) & (currentTime-u_rec(1, :)<=param.loopdt), 1);
             if ~isempty(u_ind)
                 u_this = u_rec(2:4, u_ind);
                 u_index = u_ind;

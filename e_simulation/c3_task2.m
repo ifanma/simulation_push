@@ -139,6 +139,7 @@ function c3_timer_cb(obj, ~, logFileID, param, mmap_state, mmap_control, mmap_jo
         end
 
         [x_next, ~] = param.traj(param.ctrldt, param.x_ref, param);
+        x_next(1:2) = x(1:2);
         mmap_ref.Data = x_next(1:3);
     
         mmap_control.Data.u = param_.u_rec_oneshoot;

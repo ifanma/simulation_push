@@ -24,22 +24,22 @@ addlistener(hDrv,'SenState', @(src, evnt)cb_updateMon(src, evnt, mmap));
 param.l = 0.05;
 param.polygen = param.l *[-1 -1 1 1;
                           -1 1 1 -1];
-param.m = 0.3;
+param.m = 0.8;
 param.mu = 0.4;         % 地面摩擦
 param.mu_c = 0.3;       % 操作摩擦
 param.g = 9.81;
 umg = param.mu * param.m * param.g;
-param.L = diag([0.5, 0.5, 0.06]) * diag([2/umg^2, 2/umg^2,...
+param.L = diag([0.5, 0.5, 0.2]) * diag([2/umg^2, 2/umg^2,...
                 2/(0.03825* umg)^2]);
 % 0.03825
 c3_derive_jacobian(param);
 
 %% ======================= 疯狂调参 ========================== %%
 % MPC objective parameter
-param.Q = 5 * diag([1, 1, 0.1, 0, 0]);    % 状态跟踪代价
-param.Q_N = 20 * diag([1, 1, 0.03, 0, 0]);    % 状态跟踪代价
-param.R = 1 * diag([0, 1, 0]);       % 控制跟踪代价
-param.R_d = 0 * diag([1, 1, 0.2]);       % 控制变化代价
+param.Q = 10 * diag([1, 1, 0.1, 0, 0]);    % 状态跟踪代价
+param.Q_N = 2000 * diag([1, 1, 0.1, 0, 0]);    % 状态跟踪代价
+param.R = 0 * diag([0, 1, 0]);       % 控制跟踪代价
+param.R_d = 0.1 * diag([1, 1, 0.2]);       % 控制变化代价
 param.W = 0.0 * diag([0.8, 1, 1]);        % 状态先验代价，认为不滑动的状态较好
 param.V = 0.1 * diag([1, 1, 1]);          % 状态切换代价，认为不切换最好
 
@@ -47,16 +47,16 @@ param.V = 0.1 * diag([1, 1, 1]);          % 状态切换代价，认为不切换
 d = 0.01;
 param.xl = [-10, -10, -10, -param.l - 0.0005 - d, -param.l *0.9]';
 param.xu = [10, 10, 10, -param.l - 0.0005 + d, param.l*0.9]';
-param.ul = [0, -0.04, -0.02]';
-param.uu = [0.08, 0.04, 0.02]';
+param.ul = [0, -0.1, -0.02]';
+param.uu = [0.3, 0.1, 0.02]';
 
 % 时间参数
-TimerPeriod = 0.2;              % 控制器计算定时器周期
-SolverLimitTime = 0.18;          % 优化器时间限制
-PredictHorizon = 5.0;           % Mpc预测时域
-PredictPeriod = 0.2;           % 优化间隔周期
+TimerPeriod = 0.05;              % 控制器计算定时器周期
+SolverLimitTime = 0.04;          % 优化器时间限制
+PredictHorizon = 1.0;           % Mpc预测时域
+PredictPeriod = 0.04;           % 优化间隔周期
 % N = floor(PredictHorizon/PredictPeriod);      % 优化问题大小
-LoopTime = 0.002;                   % 通讯线程单次循环时间
+LoopTime = 0.01;                   % 通讯线程单次循环时间
 FigureDataRecordPeriod = 0.01;      % 绘画记录数据周期
 TotalTime = 50;                  % 程序仿真总时间
 
@@ -104,7 +104,7 @@ plot(t_plot, x_plot(1:3, :)');
 % dx = diff(x_plot(1:2, :)')';
 % theta = dx(2,:)./(dx(1,:)+0.01);
 % plot(t_plot, [theta, 0]);
-di = floor(1 / param.ctrldt);
+di = floor(0.2 / param.ctrldt);
 if di == 0, di = 1; end
 for i = 1:di:size(xpre_plot, 2)
     red_part = xpre_plot{i}(1, :) <= xpre_plot{i}(1, 1) +dt_used(i);

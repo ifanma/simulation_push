@@ -24,7 +24,7 @@ addlistener(hDrv,'SenState', @(src, evnt)cb_updateMon(src, evnt, mmap));
 param.l = 0.05;
 param.polygen = param.l *[-1 -1 1 1;
                           -1 1 1 -1];
-param.m = 0.3;
+param.m = 0.8;
 param.mu = 0.4;         % 地面摩擦
 param.mu_c = 0.3;       % 操作摩擦
 param.g = 9.81;

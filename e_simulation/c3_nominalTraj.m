@@ -9,8 +9,13 @@ function [x_star, u_star] = c3_nominalTraj(t, x, param)
     cmd = param.cmd;
     
     R = [cos(x(3)) -sin(x(3)); sin(x(3)) cos(x(3))];
+
+    
     x_cmd(1:2) = x(1:2) + R*cmd(1:2)*t;
-    x_cmd(3) = x(3) + 0.5 *atan2(cmd(2), cmd(1)) * t;
+    if t> 3.0
+        t = 3.0;
+    end
+    x_cmd(3) = x(3) + 0.4 *atan2(cmd(2), cmd(1)) * t;
 
     x_star =  [x_cmd -param.l 0]';
     u_star = [cmd(1)/param.L(1,1), 0, 0]';

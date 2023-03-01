@@ -25,8 +25,8 @@ param.l = 0.05;
 param.polygen = param.l *[-1 -1 1 1;
                           -1 1 1 -1];
 param.m = 0.8;
-param.mu = 0.4;         % 地面摩擦
-param.mu_c = 0.3;       % 操作摩擦
+param.mu = 0.35;         % 地面摩擦
+param.mu_c = 0.2;       % 操作摩擦
 param.g = 9.81;
 umg = param.mu * param.m * param.g;
 param.L = diag([0.5, 0.5, 0.2]) * diag([2/umg^2, 2/umg^2,...
@@ -36,19 +36,19 @@ derive_jacobian(param);
 
 %% ======================= 疯狂调参 ========================== %%
 % MPC objective parameter
-param.Q = 180 * diag([1, 1, 0.01, 0, 0]);    % 状态跟踪代价
-param.Q_N = 200 * diag([1, 1, 0.2, 0, 0]);    % 状态跟踪代价
-param.R = 100 * diag([0, 1, 0]);       % 控制跟踪代价
+param.Q = 130 * diag([1, 1, 0.03, 0, 0]);    % 状态跟踪代价
+param.Q_N = 800 * diag([1, 1, 0.1, 0, 0]);    % 状态跟踪代价
+param.R = 1 * diag([0, 1, 0]);       % 控制跟踪代价
 param.R_d = 10 * diag([1, 1, 0.2]);       % 控制变化代价
-param.W = 0.0 * diag([0.8, 1, 1]);        % 状态先验代价，认为不滑动的状态较好
-param.V = 0.5 * diag([1, 1, 1]);          % 状态切换代价，认为不切换最好
+param.W = 0.1 * diag([0.8, 1, 1]);        % 状态先验代价，认为不滑动的状态较好
+param.V = 2 * diag([1, 1, 1]);          % 状态切换代价，认为不切换最好
 
 % MPC constraints parameter
 d = 0.01;
 param.xl = [-10, -10, -10, -param.l - 0.0005 - d, -param.l *0.9]';
 param.xu = [10, 10, 10, -param.l - 0.0005 + d, param.l*0.9]';
-param.ul = [0, -0.04, -0.02]';
-param.uu = [0.1, 0.04, 0.02]';
+param.ul = [0, -0.2, -0.02]';
+param.uu = [0.5, 0.2, 0.02]';
 
 % 时间参数
 TimerPeriod = 0.2;              % 控制器计算定时器周期
@@ -56,14 +56,14 @@ SolverLimitTime = 0.18;          % 优化器时间限制
 PredictHorizon = 5.0;           % Mpc预测时域
 PredictPeriod = 0.2;           % 优化间隔周期
 % N = floor(PredictHorizon/PredictPeriod);      % 优化问题大小
-LoopTime = 0.002;                   % 通讯线程单次循环时间
+LoopTime = 0.01;                   % 通讯线程单次循环时间
 FigureDataRecordPeriod = 0.01;      % 绘画记录数据周期
 TotalTime = 20;                  % 程序仿真总时间
 
 param.v_star = param.l ;
 % x0 = [0, 0.05, pi/6, -0.05, 0.025]';
 % x0 = [0, 0, pi/6, -0.0505, 0.0]';
-x0 = [0, 0.05, pi/6, -0.0505, 0.0]';
+x0 = [0, 0.02, pi/6, -0.0505, 0]';
 param.DEBUG = 0;
 
 %% ======================= 构建优化问题 ========================== %%
@@ -101,7 +101,7 @@ clf
 plot(t_plot, x_plot(6:8, :)', '*');
 hold on
 plot(t_plot, x_plot(1:3, :)');
-di = floor(1 / param.ctrldt);
+di = floor(0.2 / param.ctrldt);
 if di == 0, di = 1; end
 for i = 2:di:size(xpre_plot, 2)
     red_part = xpre_plot{i}(1, :) <= xpre_plot{i}(1, 1) +dt_used(i);

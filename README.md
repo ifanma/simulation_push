@@ -1,3 +1,11 @@
+<!--
+ * @Author: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
+ * @Date: 2023-02-18 20:21:53
+ * @LastEditors: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
+ * @LastEditTime: 2023-03-01 17:17:56
+ * @FilePath: \simulation_push\README.md
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
 
 # simulation_push
  
@@ -10,7 +18,7 @@
 3、加入噪声和干扰
 4、接触点可以在空中，但是有过渡过程
 
-![数值仿真](.\数值仿真.png)
-![CoppeliaSim仿真](.\CoppeliaSim仿真.png)
+![数值仿真](./数值仿真.png)
+![CoppeliaSim仿真](./CoppeliaSim仿真.png)
 
 [1] Hogan F R. Reactive manipulation with contact models and tactile feedback[D]. Massachusetts Institute of Technology, 2020. 

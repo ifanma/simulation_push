@@ -72,7 +72,6 @@ function state = c3_task1(x0_, param)
         pos_joint = pos_cmd;
         angle_round = 0; ang_last = 0;
         fail_loop = 0;
-        ref = [0 0 0];
         show = 0;
     
         tic;
@@ -83,7 +82,7 @@ function state = c3_task1(x0_, param)
         lastTime = currentTime;
         while (currentTime-startTime < param.tf)
             currentTime = toc;
-            fprintf(logFileID, 'currentTime = %f, dt = %f\r\n', currentTime, currentTime - lastTime);
+%             fprintf(logFileID, 'currentTime = %f, dt = %f\r\n', currentTime, currentTime - lastTime);
             lastTime = currentTime;
     
             joy = mmap.Data;
@@ -121,6 +120,7 @@ function state = c3_task1(x0_, param)
 %             fprintf(logFileID, '%f Here here.\r\n', control_data.flag);
             
             % 计算控制
+            fprintf(logFileID, '%f, %d\r\n', t_, control_data.flag);
             if control_data.flag == 1
                 mmap_control.Data.flag = uint8(0);
                 if control_data.diag == 3
@@ -131,7 +131,7 @@ function state = c3_task1(x0_, param)
                     break;
                 end
 
-                fprintf(logFileID, 'Here here. %f, %f, %f\r\n', size(control_data.x, 2), size(u_rec, 2), size(control_data.u, 2));
+                fprintf(logFileID, 'Here here. %f, %f, %f\r\n', t_, size(control_data.x, 2), size(u_rec, 2));
                 u_rec = [];
                 u_rec(1, :) = control_data.x(1, 1:end-1);
                 u_rec(2:4, :) = control_data.u;
@@ -153,6 +153,10 @@ end
             if ~isempty(u_ind)
                 u_this = u_rec(2:4, u_ind);
                 u_index = u_ind;
+            end
+
+            if u_index >= param.N
+                break;
             end
 
 %             if isempty(u_rec)

@@ -76,15 +76,15 @@ function state = c3_task2(param)
         fprintf(logFileID, 'Controller build finished.\r\n');
     
         %% Timer初始化
-        t = timer('StartDelay', 0, 'Period', param.ctrldt, 'TasksToExecute', inf,...
-            'BusyMode', 'queue', 'ExecutionMode', 'fixedRate');
+        t = timer('StartDelay', 0, 'Period', param.ctrldt, 'TasksToExecute', 10000,...
+            'BusyMode', 'drop', 'ExecutionMode', 'fixedRate');
         % t.TimerFcn = { @cb_timer, param};
         t.TimerFcn = {@c3_timer_cb, logFileID, param, mmap_state, mmap_control, mmap_joy, mmap_ref};
         t.StartFcn = @(x,y)fprintf(logFileID, 'Control Thread Started!\r\n');
         t.StopFcn = @(x,y)fprintf(logFileID,'Control Thread Stopped!\r\n');
         
-        t_star = tic;
-        while toc(t_star) < 10
+        t_1 = tic;
+        while toc(t_1) < 10
             fprintf(logFileID, 'Waiting for starting communication thread.\r\n');
             pause(0.05);
             if mmap_control.Data.flag == 0
@@ -94,20 +94,12 @@ function state = c3_task2(param)
         x = mmap_state.Data(2:6);
         mmap_ref.Data = x(1:3);
 
+        global t_star;
+        t_star = tic;
         if param.DEBUG == 0
             t.start;
         end
-        t_star = tic;
-        while toc(t_star) < param.tf
-            pause(0.05);
-            fprintf(logFileID, 'wait for task final time: %f.\r\n', toc(t_star));
-            if mmap_control.Data.diag == 3
-                fprintf(logFileID, 'Solver timeout\r\n');
-            elseif mmap_control.Data.diag ~= 0
-                fprintf(logFileID, 'Solver failed\r\n');
-                break;
-            end
-        end
+        t.wait;
         t.stop;
         fprintf(logFileID, 'Timer stoped.\r\n');
 
@@ -123,8 +115,11 @@ function state = c3_task2(param)
 end
 
 
-function c3_timer_cb(~, ~, logFileID, param, mmap_state, mmap_control, mmap_joy, mmap_ref)
+function c3_timer_cb(obj, ~, logFileID, param, mmap_state, mmap_control, mmap_joy, mmap_ref)
+    
+    global t_star;
     try
+
         state = mmap_state.Data;
         t = state(1);
         x = state(2:6);
@@ -138,13 +133,19 @@ function c3_timer_cb(~, ~, logFileID, param, mmap_state, mmap_control, mmap_joy,
         [~, param_] = c3_controlEqn(t, x, param);
         usedTime = toc(t_start);
 
+        if mmap_control.Data.flag == 1
+            stop(obj);
+            return;
+        end
+
         [x_next, ~] = param.traj(param.ctrldt, param.x_ref, param);
         mmap_ref.Data = x_next(1:3);
     
         mmap_control.Data.u = param_.u_rec_oneshoot;
     %     mmap_control.Data.u = repmat([0.25 / param.L(1,1), 0, 0]', 1, param.N);
-    %     pause(0.2);
     
+        fprintf(logFileID,'Timer in. %d\r\n', mmap_control.Data.flag);
+
         [~, ind] = max(param_.z_rec_oneshoot);
         ind(ind == 1) = 0;
         ind(ind == 2) = 1;
@@ -153,16 +154,37 @@ function c3_timer_cb(~, ~, logFileID, param, mmap_state, mmap_control, mmap_joy,
         mmap_control.Data.x(1, :) = t:param_.predt:t + param_.N*param_.predt;
         mmap_control.Data.x(2:4, :) = param_.x_rec_oneshoot(1:3, :);
         mmap_control.Data.diag = uint8(param_.diagnostics);
-        mmap_control.Data.flag = uint8(1);
         mmap_control.Data.dt = usedTime;
+        mmap_control.Data.flag = uint8(1);
+        mmap_control.Data.flag = uint8(1);
+        mmap_control.Data.flag = uint8(1);
         
-        fprintf(logFileID,'Timer in. t = %f, x1 = %f, %d, %d\r\n', state(1), state(2), size(param_.u_rec_oneshoot, 2), size(param_.x_rec_oneshoot, 2));
-        fprintf(logFileID,'Timer in2. %f, %f, %f\r\n', cmd(1), cmd(2), cmd(3));
+        fprintf(logFileID,'Timer in. t = %f, x1 = %f, %d, %d, %d\r\n', state(1), state(2), size(param_.u_rec_oneshoot, 2), size(param_.x_rec_oneshoot, 2), mmap_control.Data.flag);
+%         fprintf(logFileID,'Timer in2. %f, %f, %f\r\n', cmd(1), cmd(2), cmd(3));
     catch ME
         fprintf(logFileID,'Error in timer: %s, %s\r\n', ME.identifier, ME.message);
         for i = 1:size(ME.stack, 1)
             fprintf(logFileID,'%s, %d\r\n', ME.stack(i).name, ME.stack(i).line);
         end
+        mmap_control.Data.diag = uint8(1);
+    end
+
+    stop_flag = 0;
+    if toc(t_star) > param.tf
+        stop_flag = 1;
+    end
+    if mmap_control.Data.diag == 3
+        fprintf(logFileID, 'Solver timeout\r\n');
+    elseif mmap_control.Data.diag == 1
+        fprintf(logFileID, 'Timer error\r\n');
+        stop_flag = 1;
+    elseif mmap_control.Data.diag ~= 0
+        fprintf(logFileID, 'Solver failed\r\n');
+        stop_flag = 1;
+    end
+
+    if stop_flag == 1
+        stop(obj);
     end
 
 end

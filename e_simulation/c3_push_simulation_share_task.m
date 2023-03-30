@@ -96,6 +96,7 @@ taskResult(2)
 
 load('c3_figureData.mat');
 
+
 figure(1)
 clf
 plot(t_plot, x_plot(6:8, :)', '*');
@@ -154,7 +155,7 @@ legend('cmd_x', 'cmd_y', 'real_x', 'real_y', 'joint_x', 'joint_y');
 
 figure(5)
 clf
-x_plot_diff = diff(x_plot')';
+x_plot_diff = diff(x_plot')'./diff(t_plot);
 plot(t_plot(1:end-1), movavg(x_plot_diff(1:2, :)','linear', 100));
 hold on
 plot(t_plot(1:end-1), movavg(x_plot_diff(6:7, :)','linear', 100)');

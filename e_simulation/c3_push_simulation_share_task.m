@@ -156,9 +156,10 @@ legend('cmd_x', 'cmd_y', 'real_x', 'real_y', 'joint_x', 'joint_y');
 figure(5)
 clf
 x_plot_diff = diff(x_plot')'./diff(t_plot);
-plot(t_plot(1:end-1), movavg(x_plot_diff(1:2, :)','linear', 100));
+% plot(t_plot(1:end-1), movavg(x_plot_diff(1:2, :)','linear', 100));
 hold on
 plot(t_plot(1:end-1), movavg(x_plot_diff(6:7, :)','linear', 100)');
+plot(t_plot(1:end-1), cmd_joy(:, 1:end-1));
 
 legend( 'vx', 'vy', 'vx_{ref}', 'vy_{ref}');
 
@@ -174,6 +175,10 @@ function cb_updateMon(src, ~, varargin)
     deadzone_m = 100;
     joy = [src.Sen.Translation.X, src.Sen.Translation.Y, src.Sen.Translation.Z...
            src.Sen.Rotation.X, src.Sen.Rotation.Y, src.Sen.Rotation.Z];
+    
+    disp(src.Key.IsKeyDown(1))
+    disp(src.Key.IsKeyDown(2))
+
     for i = 1:3
         if abs(joy(i)) < deadzone_m
             joy(i) = 0;
@@ -183,8 +188,10 @@ function cb_updateMon(src, ~, varargin)
             joy(i) = joy(i) + deadzone_m;
         end
     end
-
+   
+    joy(2) = -2000;
     mmap.Data = joy;
+    
     c3_joy2cmd(joy)
 end
 

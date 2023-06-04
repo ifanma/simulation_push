@@ -43,6 +43,18 @@ function state = c3_task1(x0_, param)
         [~, ps_h] = sim.simxGetObjectHandle(clientID, './pusher', sim.simx_opmode_blocking);
         [~, fs_h] = sim.simxGetObjectHandle(clientID, 'ForceSensor', sim.simx_opmode_blocking);
     
+
+        [~, cb1_h] = sim.simxGetObjectHandle(clientID, './Cuboid[2]', sim.simx_opmode_blocking);
+        [~, cb2_h] = sim.simxGetObjectHandle(clientID, './Cuboid[3]', sim.simx_opmode_blocking);
+%         [~, cb3_h] = sim.simxGetObjectHandle(clientID, './Cuboid[4]', sim.simx_opmode_blocking);
+
+        sim.simxSetObjectPosition(clientID, cb1_h, 1, [0.55, 0.06, 0.05], sim.simx_opmode_blocking);
+        sim.simxSetObjectQuaternion(clientID, cb1_h, 1, [0, 0, 0, 1], sim.simx_opmode_blocking);
+        sim.simxSetObjectPosition(clientID, cb2_h, 1, [0.55, 0.24, 0.05], sim.simx_opmode_blocking);
+        sim.simxSetObjectQuaternion(clientID, cb2_h, 1, [0, 0, 0, 1], sim.simx_opmode_blocking);
+%         sim.simxSetObjectPosition(clientID, cb3_h, 1, [0.625, 0.15, 0.05], sim.simx_opmode_blocking);
+%         sim.simxSetObjectQuaternion(clientID, cb3_h, 1, [0, 0, 0, 1], sim.simx_opmode_blocking);
+
         sim.simxSetJointTargetPosition(clientID, Jx_h, 0, sim.simx_opmode_blocking);
         sim.simxSetJointTargetPosition(clientID, Jy_h, 0, sim.simx_opmode_blocking);
         pause(2);
@@ -67,6 +79,7 @@ function state = c3_task1(x0_, param)
         % 开始循环 
         x_plot = []; u_plot = []; usize_plot = []; t_plot = []; xpre_plot = {};
         u_rec = zeros(4, param.N); z_plot = []; joint_plot = []; uft_plot = [];
+        cmd_joy = [];
         jft_plot = []; u_index = 0; dt_used = [];
         pos_cmd = pc(1:2);
         pos_joint = pos_cmd;
@@ -199,6 +212,8 @@ end
                 R = [cos(x0_(3)) -sin(x0_(3)) ; sin(x0_(3)) cos(x0_(3)) ]';
                 uft_plot(:, end+1) = diag([-1, 1]) * R * [force_m(1) force_m(2)]';
                 jft_plot(:, end+1) = -R * [jx_force, jy_force]';
+                cmd = c3_joy2cmd(joy);
+                cmd_joy(:, end+1) = R' * cmd(1:2);
                 lastPlotTime = currentTime;
             end
     
